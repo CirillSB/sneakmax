@@ -1,6 +1,16 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  testWebP
+} from './utils/test-webp';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+
 
 // ---------------------------------
 
@@ -8,7 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
+  
+  testWebP();
   iosVhFix();
 
   // Modules
