@@ -534,7 +534,7 @@ button,
 
 .container {
   width: 61.4583333333%;
-  max-width: 1920px;
+  max-width: 2160px;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
@@ -1196,6 +1196,105 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.main-header {
+  background-color: #2c39f2;
+  position: fixed;
+  width: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.40625vw 0 1.1458333333vw;
+  border-bottom: 0.0520833333vw solid #ffffff;
+}
+
+.navigation__logo {
+  font-family: "Intro", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.5625vw;
+  color: #ffffff;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 2.0833333333vw;
+}
+
+.navigation__link {
+  font-family: "Intro-Book", "Arial", sans-serif;
+  font-size: 0.7291666667vw;
+  font-weight: 400;
+  line-height: 0.7291666667vw;
+  color: #ffffff;
+}
+
+.cart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__field {
+  margin-left: 0.5208333333vw;
+  width: 1.0416666667vw;
+  height: 0.9895833333vw;
+}
+
+.cart__contents {
+  position: absolute;
+  right: -10%;
+  bottom: -25%;
+  width: 0.8333333333vw;
+  height: 0.8854166667vw;
+  border-radius: 50%;
+  background-color: #f14f4f;
+  text-align: center;
+  font-family: "Intro-Book", "Arial", sans-serif;
+  font-size: 0.7291666667vw;
+  line-height: 0.8854166667vw;
 }
 
 /* @mixin hover-focus {
