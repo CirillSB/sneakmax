@@ -1199,9 +1199,10 @@ button,
 }
 
 .main-header {
-  background-color: #2c39f2;
+  background-color: #484283;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .navigation {
@@ -1295,6 +1296,44 @@ button,
   font-family: "Intro-Book", "Arial", sans-serif;
   font-size: 0.7291666667vw;
   line-height: 0.8854166667vw;
+}
+
+.promo {
+  position: relative;
+  background-color: #484283;
+  padding: 8.59375vw 0 4.9479166667vw;
+  background-image: url("../img/svg/back-text.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 69%;
+  background-size: 43%;
+}
+
+.promo__description {
+  margin: 0 55% 1.0416666667vw 0;
+  font-size: 0.8333333333vw;
+  line-height: 1.1458333333vw;
+  color: #ffffff;
+}
+
+.promo__link {
+  display: inline-block;
+  padding: 1.1458333333vw 2.4479166667vw;
+  border-radius: 0.2083333333vw;
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 0.8333333333vw;
+  font-weight: 400;
+  line-height: 0.8333333333vw;
+  color: #ffffff;
+  background-color: #f14f4f;
+}
+
+.main-title {
+  margin: 0 50% 1.0416666667vw 0;
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 1.875vw;
+  font-weight: 400;
+  line-height: 2.6041666667vw;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {

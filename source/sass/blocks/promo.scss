@@ -1,0 +1,42 @@
+.promo {
+	position: relative;
+  background-color: $color-east-bay;
+  padding: sz(165px) 0 sz(95px);
+  background-image: url("../img/svg/back-text.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 69%;
+  background-size: 43%;
+
+  // &::after {
+  //   content: "SneakMax";
+  //   font-family: $ff-intro;
+  //   font-weight: 700;
+  //   font-size: sz(200px);
+  //   line-height: sz(200px);
+  //   color: $color-default-white;
+  //   opacity: 0.12;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -25%);
+  // }
+}
+
+.promo__description {
+  margin: 0 55% sz(20px) 0;
+  font-size: sz(16px);
+  line-height: sz(22px);
+  color: $color-default-white;
+}
+
+.promo__link {
+  display: inline-block;
+  padding: sz(22px) sz(47px);
+  border-radius: sz(4px);
+  font-family: $ff-intro;
+  font-size: sz(16px);
+  font-weight: 400;
+  line-height: sz(16px);
+  color: $color-default-white;
+  background-color: $color-carnation;
+}
