@@ -534,6 +534,7 @@ button,
 
 .container {
   width: 61.4583333333%;
+  min-width: 1180px;
   max-width: 2160px;
   margin: 0 auto;
 }
@@ -1222,8 +1223,8 @@ button,
 .navigation__logo {
   font-family: "Intro", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 1.5625vw;
-  line-height: 1.5625vw;
+  font-size: 30px;
+  line-height: 30px;
   color: #ffffff;
 }
 
@@ -1259,9 +1260,9 @@ button,
 
 .navigation__link {
   font-family: "Intro-Book", "Arial", sans-serif;
-  font-size: 0.7291666667vw;
   font-weight: 400;
-  line-height: 0.7291666667vw;
+  font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
 }
 
@@ -1294,8 +1295,8 @@ button,
   background-color: #f14f4f;
   text-align: center;
   font-family: "Intro-Book", "Arial", sans-serif;
-  font-size: 0.7291666667vw;
-  line-height: 0.8854166667vw;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .promo {
@@ -1304,14 +1305,14 @@ button,
   padding: 8.59375vw 0 4.9479166667vw;
   background-image: url("../img/svg/back-text.svg");
   background-repeat: no-repeat;
-  background-position: 50% 69%;
-  background-size: 43%;
+  background-position: 50% 66%;
+  background-size: 44.21875vw;
 }
 
 .promo__description {
   margin: 0 55% 1.0416666667vw 0;
-  font-size: 0.8333333333vw;
-  line-height: 1.1458333333vw;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 
@@ -1320,9 +1321,9 @@ button,
   padding: 1.1458333333vw 2.4479166667vw;
   border-radius: 0.2083333333vw;
   font-family: "Intro", "Arial", sans-serif;
-  font-size: 0.8333333333vw;
   font-weight: 400;
-  line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
   color: #ffffff;
   background-color: #f14f4f;
 }
@@ -1330,10 +1331,18 @@ button,
 .main-title {
   margin: 0 50% 1.0416666667vw 0;
   font-family: "Intro", "Arial", sans-serif;
-  font-size: 1.875vw;
   font-weight: 400;
-  line-height: 2.6041666667vw;
+  font-size: 36px;
+  line-height: 50px;
   color: #ffffff;
+}
+
+.title {
+  font-family: "Intro", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 2.0833333333vw 0;
 }
 
 /* @mixin hover-focus {

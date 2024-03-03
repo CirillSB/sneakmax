@@ -9,8 +9,10 @@
 .navigation__logo {
   font-family: $ff-intro;
   font-weight: 700;
-  font-size: sz(30px);
-  line-height: sz(30px);
+  // font-size: sz(30px);
+  // line-height: sz(30px);
+  font-size: 30px;
+  line-height: 30px;
   color: $color-default-white;
 
 }
@@ -37,9 +39,11 @@
 
 .navigation__link {
   font-family: $ff-default;
-  font-size: sz(14px);
+  // font-size: sz(14px);
   font-weight: 400;
-  line-height: sz(14px);
+  // line-height: sz(14px);
+  font-size: 14px;
+  line-height: 14px;
   color: $color-default-white;
 }
 
