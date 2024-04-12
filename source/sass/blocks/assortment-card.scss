@@ -1,12 +1,15 @@
-.assortment-card {
-}
-.assortment-card__link {
-}
-.assortment-card__picture {
-}
 .assortment-card__image {
+  margin-bottom: sz(10px);
 }
+
 .assortment-card__title {
+  line-height: sz(16px);
+  margin: 0 0 sz(12px) 0;
 }
+
 .assortment-card__price {
+  font-family: $ff-intro;
+  font-size: sz(20px);
+  line-height: sz(20px);
+  margin: 0;
 }

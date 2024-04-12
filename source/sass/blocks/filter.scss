@@ -1,0 +1,183 @@
+.filter {
+  background-color: $color-seashell-peach;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.filter__title {
+  margin: 0 0 sz(20px) 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.filter__subtitle {
+  margin: 0 0 sz(10px) 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.filter__price {
+  margin: 0 0 sz(10px) 0;
+}
+
+.filter__price-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  border-top: sz(1px) solid $color-bombay;
+  border-left: sz(1px) solid $color-bombay;
+  border-right: sz(1px) solid $color-bombay;
+  border-radius: sz(4px);
+  padding: sz(15px) 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: sz(1px);
+    height: sz(34px);
+    background-color: $color-bombay;
+  }
+}
+
+.filter__slider-wrapper {
+  grid-column: span 2;
+}
+
+.filter__inner {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-bottom: sz(25px);
+  width: 100%;
+}
+
+.filter__price-value {
+  width: 100%;
+  padding: 0 sz(10px);
+  border: none;
+  font-family: $ff-default;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: $color-seashell-peach;
+}
+
+.filter__price-slider {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  padding: 0;
+  width: sz(5px);
+  height: sz(20px);
+  border: sz(1px) solid $color-seashell-peach;
+  cursor: pointer;
+  border-radius: sz(4px);
+  background-color: $color-river-bed;
+  z-index: 100;
+
+  &--min {
+    left: 0;
+  }
+
+  &--max {
+    right: 0;
+  }
+}
+
+.filter__genders-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__gender-button {
+  position: relative;
+  padding-left: sz(35px);
+  font-family: $ff-default;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.filter__gender-label {
+  position: relative;
+  font-size: sz(16px);
+  line-height: sz(16px);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: sz(-38px);
+    top: 0;
+    width: sz(24px);
+    height: sz(24px);
+    border-radius: sz(4px);
+    border: sz(1px) solid $color-cameo;
+  }
+
+  &::after {
+    position: absolute;
+    top: sz(5px);
+    left: sz(-32px);
+    color: $color-cameo;
+  }
+}
+
+.filter__size-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: sz(2px);
+  border: sz(2px) solid $color-cameo;
+  border-radius: sz(1px) sz(1px) 0 0;
+  background-color: $color-cameo;
+}
+
+.filter__size-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-seashell-peach;
+}
+
+.filter__size-checkbox {
+  position: relative;
+}
+
+.filter__size-number {
+  padding: sz(20px);
+}
+
+.filter__button {
+  margin-bottom: sz(22px);
+
+  &--submit {
+    width: 100%;
+    padding: sz(22px);
+    background-color: $color-river-bed;
+    color: $color-default-white;
+    border-radius: sz(4px);
+  }
+
+  &--reset {
+    background-color: transparent;
+    color: $color-river-bed;
+  }
+}
+
+.filter__gender-button:checked + .filter__gender-label::after {
+  content: "\2713";
+}
+
+.filter__size-checkbox:checked + .filter__size-number {
+  color: $color-red;
+}

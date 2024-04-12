@@ -1,0 +1,42 @@
+.team {
+  background:
+    url("../img/svg/team.svg") 100% 0 / 25% no-repeat,
+    linear-gradient($color-east-bay);
+  padding: sz(40px) 0;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: sz(20px);
+  grid-row-gap: sz(40px);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.team__image {
+  margin-bottom: sz(10px);
+  border-radius: sz(4px);
+}
+
+.team__member {
+  font-family: $ff-intro;
+  font-weight: 700;
+  font-size: sz(24px);
+  line-height: sz(24px);
+  color: $color-default-white;
+  margin-bottom: sz(10px);
+}
+
+.team__member-position {
+  color: $color-default-white;
+}

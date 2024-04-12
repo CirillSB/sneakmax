@@ -1,0 +1,54 @@
+.about-us {
+  background:
+    url("../img/svg/about.svg") 0 0 / 28% no-repeat,
+    linear-gradient($color-east-bay);
+}
+
+.about-us__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us__picture {
+  clip-path: polygon(20% 0%, 100% 0, 80% 100%, 0% 100%);
+}
+
+.about-us__promo {
+  width: 38%;
+}
+
+.about-us__title {
+  margin: 0 0 sz(25px) 0;
+}
+
+.about-us__quote {
+  width: 89%;
+  margin: 0 0 sz(25px) 0;
+  font-family: $ff-default;
+  font-size: sz(16px);
+  line-height: sz(22px);
+  color: $color-default-white;
+}
+
+.about-us__quote-author {
+  position: relative;
+  font-family: $ff-intro;
+  font-size: sz(20px);
+  font-weight: 700;
+  line-height: sz(20px);
+  color: $color-default-white;
+  display: block;
+  text-align: right;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
+    content: "";
+    width: sz(28px);
+    height: sz(1px);
+    border: sz(1px) solid $color-default-white;
+  }
+}

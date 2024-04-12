@@ -10,21 +10,18 @@ import {
 import {
   Form
 } from './modules/form-validate/form';
-
-
+import {
+  setRangeSlider
+} from './modules/range-slider/range-slider';
 // ---------------------------------
-
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
-  
   testWebP();
   iosVhFix();
-
   // Modules
   // ---------------------------------
-
+  setRangeSlider();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
@@ -34,7 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

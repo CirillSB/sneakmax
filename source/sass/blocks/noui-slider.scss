@@ -1,0 +1,42 @@
+// Шкала вне ползунков
+.noUi-target {
+  width: 100%;
+  border: sz(1px) solid $color-red;
+  background-color: $color-bombay;
+  height: sz(2px);
+}
+
+// Шкала внутри ползунков
+.noUi-connect {
+  background-color: $color-river-bed;
+  border: none;
+  z-index: 20;
+}
+
+// Ползунки
+.noUi-handle {
+  box-shadow: none;
+  transform: translate(50%, -50%);
+  width: sz(5px);
+  height: sz(20px);
+  border-radius: sz(3px);
+  border: sz(1px) solid $color-default-white;
+  background-color: $color-river-bed;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.noUi-horizontal .noUi-handle {
+  width: sz(5px);
+  height: sz(20px);
+  top: 0;
+  right: 0;
+}
+
+.noUi-touch-area {
+  display: none;
+}

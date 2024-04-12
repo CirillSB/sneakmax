@@ -1,0 +1,26 @@
+.perfect-pair {
+  padding: sz(60px) 0;
+}
+
+.perfect-pair__inner {
+  padding: sz(40px) sz(100px);
+  background-color: $color-seashell-peach;
+}
+
+.perfect-pair__text {
+  margin: 0 0 sz(15px) 0;
+  padding-bottom: sz(9px);
+  border-bottom: sz(1px) solid $color-gray;
+  line-height: sz(16px);
+  color: $color-gray;
+
+  &--final {
+    font-size: sz(18px);
+    line-height: sz(16px);
+    color: $color-cameo;
+  }
+}
+
+.perfect-pair__image {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+.iphone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.iphone__svg--iphone {
+  height: 100%;
+}
+
+.iphone__svg--iphone-sent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.iphone__svg--sent {
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
