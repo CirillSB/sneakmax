@@ -1,0 +1,44 @@
+.tooltip {
+  position: absolute;
+  left: 25%;
+  top: 0;
+}
+
+.tooltip__button {
+  display: inline-block;
+  width: sz(20px);
+  height: sz(20px);
+  border-radius: 50%;
+  border: none;
+  background:
+    url("../img/svg/question.svg") 50% 50% / 50% no-repeat,
+    linear-gradient($color-default-white);
+  box-shadow: 0 0 sz(10px) $color-shadow;
+  cursor: pointer;
+}
+
+.tooltip__text {
+  display: none;
+  position: absolute;
+  bottom: 140%;
+  left: -90%;
+  margin: 0;
+  background-color: $color-default-white;
+  box-shadow: 0 0 sz(10px) $color-shadow;
+  width: sz(460px);
+  padding: sz(10px) sz(16px);
+  border-radius: sz(4px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 4%;
+    border: 9px solid transparent;
+    border-top: 9px solid $color-default-white;
+  }
+}
+
+.tooltip__button:hover + .tooltip__text {
+  display: block;
+}

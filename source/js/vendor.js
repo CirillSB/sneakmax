@@ -3,13 +3,7 @@
 import './vendor/focus-visible-polyfill';
 import './vendor/swiper';
 // import './vendor/nouislider';
-
 // console.log("asdfghjkl");
-
-
-
-
-
 /* global noUiSlider:readonly */
 // const sliderElement = document.querySelector('#slider');
 // console.log(sliderElement);
@@ -21,6 +15,3 @@ import './vendor/swiper';
 //   },
 //   start: 80,
 // });
-
-
-

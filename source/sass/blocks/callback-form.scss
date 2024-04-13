@@ -1,0 +1,49 @@
+.callback-form {
+  background-color: $color-east-bay;
+  padding: sz(40px) sz(20px);
+  border-radius: sz(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h2 {
+    margin-bottom: sz(20px);
+  }
+
+  p {
+    line-height: sz(16px);
+    color: $color-default-white;
+    width: 67%;
+    text-align: center;
+    margin: 0 0 sz(35px) 0;
+  }
+
+  input {
+    padding: sz(26px);
+    border-radius: sz(4px);
+    border: none;
+    width: 100%;
+    margin-bottom: sz(10px);
+    line-height: sz(22px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::placeholder {
+      color: $color-bombay;
+    }
+  }
+
+  button {
+    padding: sz(26px);
+    border-radius: sz(4px);
+    border: none;
+    width: 100%;
+    background-color: $color-carnation;
+    color: $color-default-white;
+    font-family: $ff-intro;
+    line-height: sz(16px);
+  }
+}

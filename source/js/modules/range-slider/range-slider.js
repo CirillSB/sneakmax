@@ -14,15 +14,15 @@ export const setRangeSlider = () => {
   }
   slider.noUiSlider.on('update', (values, handle) => {
     fields[handle].value = Math.round(values[handle]);
-  })
-  const setRangeSlider = (i, value) => {
+  });
+  const getRangeSlider = (i, value) => {
     let arr = [null, null];
     arr[i] = value;
     slider.noUiSlider.set(arr);
   };
   fields.forEach((el, index) => {
     el.addEventListener('change', (e) => {
-      setRangeSlider(index, e.currentTarget.value);
-    })
-  })
+      getRangeSlider(index, e.currentTarget.value);
+    });
+  });
 };

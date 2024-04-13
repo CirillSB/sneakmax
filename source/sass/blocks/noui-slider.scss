@@ -1,8 +1,8 @@
 // Шкала вне ползунков
 .noUi-target {
   width: 100%;
-  border: sz(1px) solid $color-red;
   background-color: $color-bombay;
+  border: none;
   height: sz(2px);
 }
 

@@ -1,0 +1,31 @@
+.contacts {
+  background-color: $color-porcelain;
+  padding: sz(65px) 0;
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 1fr sz(680px);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "title map"
+    "address map"
+    "socials map";
+}
+
+.contacts__title {
+  display: inline;
+  grid-area: title;
+}
+
+.contacts__address {
+  grid-area: address;
+}
+
+.contacts__socials {
+  grid-area: socials;
+}
+
+.contacts__map {
+  grid-area: map;
+}
