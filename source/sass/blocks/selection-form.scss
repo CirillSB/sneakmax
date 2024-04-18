@@ -1,5 +1,6 @@
 .selection-form__inner {
   position: relative;
+  padding: sz(2px) 0 sz(10px);
 }
 
 .selection-form__title {
@@ -8,7 +9,7 @@
   line-height: sz(24px);
   margin: 0;
   color: $color-river-bed;
-  margin-bottom: sz(15px);
+  margin-bottom: sz(23px);
 }
 
 .selection-form__type-list {
@@ -18,7 +19,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-column-gap: sz(40px);
+  grid-column-gap: sz(70px);
   grid-row-gap: sz(20px);
 }
 
@@ -32,7 +33,8 @@
 
 .selection-form__label {
   position: relative;
-  padding-left: sz(30px);
+  padding-left: sz(36px);
+  font-family: $ff-intro;
 
   &::before {
     content: "";
@@ -166,10 +168,11 @@
 }
 
 .selection-btn-wrapper {
-  padding: sz(15px) 0 0 0;
+  padding: sz(6px) 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: sz(1px) solid $color-river-bed;
 }
 
 .selection-form__step-number {
@@ -177,7 +180,7 @@
 }
 
 .selection-form__slide-button {
-  padding: sz(22px) sz(42px);
+  padding: sz(24px) sz(40px) sz(22px);
   border-radius: sz(4px);
   border: sz(1px) solid $color-river-bed;
   font-family: $ff-intro;

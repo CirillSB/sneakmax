@@ -1,5 +1,6 @@
 .catalog {
-  padding: sz(60px) 0;
+  padding: sz(59px) 0;
+
 }
 
 .catalog__content {
@@ -31,8 +32,10 @@
 }
 
 .catalog__button {
+  color: $color-default-white;
   background-color: $color-carnation;
   border-radius: sz(4px);
-  width: 100%;
+  width: sz(200px);
+  margin: sz(2px) 0 0 sz(-20px);
   padding: sz(22px);
 }

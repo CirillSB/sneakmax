@@ -2,15 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: sz(27px) 0 sz(22px);
+  padding: sz(22px) 0;
   border-bottom: sz(1px) solid $color-default-white;
+  &--footer {
+    padding: sz(28px) 0 sz(20px);
+    border-bottom: none;
+  }
 }
 
 .navigation__logo {
   font-family: $ff-intro;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: sz(30px);
+  line-height: sz(26px);
   color: $color-default-white;
 }
 
@@ -19,13 +23,13 @@
   justify-content: flex-end;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 sz(8px) 0 0;
   list-style-type: none;
 }
 
 .navigation__item {
   &:not(:last-child) {
-    margin-right: sz(40px);
+    margin-right: sz(41px);
   }
 
   display: flex;

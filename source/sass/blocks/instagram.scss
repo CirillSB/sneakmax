@@ -1,5 +1,5 @@
 .instagram {
-  padding: 0 sz(60px);
+  padding: 0 sz(60px) 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,7 +7,7 @@
 
 .instagram-title {
   text-align: center;
-  margin: 0;
+  margin: sz(-12px) sz(10px) sz(16px) 0;
 }
 
 .instagram__list {
@@ -15,9 +15,10 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: sz(157px) sz(320px) sz(157px);
+  grid-template-columns: sz(157px) sz(331px) sz(157px);
   grid-template-rows: repeat(2, sz(161px));
-  gap: sz(18px);
+  grid-column-gap: sz(18px); 
+  grid-row-gap: sz(13px); 
   grid-auto-flow: row;
 }
 

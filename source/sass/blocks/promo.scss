@@ -1,20 +1,17 @@
 .promo {
   position: relative;
   background-color: $color-east-bay;
-  padding: sz(165px) 0 sz(95px);
+  padding: sz(165px) 0 sz(101px);
   background-image: url("../img/svg/back-text.svg");
   background-repeat: no-repeat;
-  background-position: 50% 66%;
-  // background-size: 43%;
-  background-size: sz(849px);
+  background-position: 54% 66%;
+  background-size: sz(954px);
 }
 
 .promo__description {
-  margin: 0 55% sz(20px) 0;
-  // font-size: sz(16px);
-  // line-height: sz(22px);
-  font-size: 16px;
-  line-height: 22px;
+  margin: 0 55% sz(40px) 0;
+  font-size: sz(16px);
+  line-height: sz(22px);
   color: $color-default-white;
 }
 
@@ -23,11 +20,8 @@
   padding: sz(22px) sz(47px);
   border-radius: sz(4px);
   font-family: $ff-intro;
-  // font-size: sz(16px);
-  font-weight: 400;
-  // line-height: sz(16px);
-  font-size: 16px;
-  line-height: 16px;
+  font-size: sz(16px);
+  line-height: sz(16px);
   color: $color-default-white;
   background-color: $color-carnation;
 }

@@ -1,10 +1,13 @@
 .team {
   background:
-    url("../img/svg/team.svg") 100% 0 / 25% no-repeat,
+    url("../img/svg/team.svg") 100% 0 / 28.2% no-repeat,
     linear-gradient($color-east-bay);
-  padding: sz(40px) 0;
+  padding: sz(60px) 0 sz(59px);
 }
-
+.team__title {
+  margin-left: 4px;
+  margin-top: -1px;
+}
 .team__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,7 +27,7 @@
 }
 
 .team__image {
-  margin-bottom: sz(10px);
+  margin-bottom: sz(19px);
   border-radius: sz(4px);
 }
 
@@ -34,7 +37,7 @@
   font-size: sz(24px);
   line-height: sz(24px);
   color: $color-default-white;
-  margin-bottom: sz(10px);
+  margin-bottom: sz(15px);
 }
 
 .team__member-position {

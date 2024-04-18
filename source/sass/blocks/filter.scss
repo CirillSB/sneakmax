@@ -8,19 +8,20 @@
 
 .filter__title {
   margin: 0 0 sz(20px) 0;
-  font-size: 24px;
+  font-size: sz(24px);
   font-weight: 400;
-  line-height: 24px;
+  line-height: sz(24px);
 }
 
 .filter__subtitle {
-  margin: 0 0 sz(10px) 0;
+  margin: 0 0 sz(9px) 0;
   font-size: 16px;
   line-height: 16px;
 }
 
 .filter__price {
   margin: 0 0 sz(10px) 0;
+  margin: 0 0 10px 0;
 }
 
 .filter__price-wrapper {
@@ -54,8 +55,11 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-bottom: sz(25px);
+  padding-bottom: sz(27px);
   width: 100%;
+  &--short {
+    padding-bottom: sz(21px);
+  }
 }
 
 .filter__price-value {
@@ -106,6 +110,7 @@
 
 .filter__gender-label {
   position: relative;
+  top: sz(5px);
   font-size: sz(16px);
   line-height: sz(16px);
 
@@ -130,7 +135,7 @@
 }
 
 .filter__size-list {
-  margin: 0;
+  margin: 0 0 1px 0;
   padding: 0;
   list-style-type: none;
   display: grid;
@@ -155,14 +160,15 @@
 
 .filter__size-number {
   padding: sz(20px);
+  padding: sz(19px) sz(20px) sz(13px);
 }
 
 .filter__button {
-  margin-bottom: sz(22px);
+  margin-bottom: sz(20px);
 
   &--submit {
     width: 100%;
-    padding: sz(22px);
+    padding: sz(21px) 0 sz(22px);
     background-color: $color-river-bed;
     color: $color-default-white;
     border-radius: sz(4px);

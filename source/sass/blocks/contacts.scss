@@ -1,6 +1,6 @@
 .contacts {
   background-color: $color-porcelain;
-  padding: sz(65px) 0;
+  padding: sz(57px) 0 sz(85px);
 }
 
 .contacts__inner {
@@ -14,12 +14,13 @@
 }
 
 .contacts__title {
-  display: inline;
   grid-area: title;
+  margin-bottom: sz(60px);
 }
 
 .contacts__address {
   grid-area: address;
+  margin-bottom: sz(20px);
 }
 
 .contacts__socials {

@@ -9,22 +9,33 @@
 }
 
 .address__item {
-  margin-bottom: sz(45px);
+  margin-bottom: sz(38px);
   position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .address__title {
   font-size: sz(14px);
+  font-weight: 400;
   line-height: sz(20px);
   letter-spacing: 0.08em;
+  letter-spacing: normal;
   color: $color-bombay;
-  margin: 0 0 sz(40px) 0;
+  margin: 0 0 sz(21px) 0;
+
+  &--first {
+    margin: 0 0 41px 0;
+  }
 }
 
 .address__phone-link {
   display: inline-block;
-  font-size: sz(20px);
-  line-height: sz(25px);
+  font-family: $ff-intro;
+  font-size: sz(30px);
+  line-height: sz(42px);
   margin-bottom: sz(10px);
 }
 
