@@ -4,9 +4,11 @@
   justify-content: center;
   align-items: flex-start;
 }
+
 .questions__title {
   margin-bottom: sz(41px);
 }
+
 .questions__list {
   list-style-type: none;
   margin: 0 auto;
@@ -22,9 +24,11 @@
     border-bottom: sz(1px) solid $color-default-black;
   }
 }
+
 .questions__details {
   appearance: none;
 }
+
 .questions__summary {
   position: relative;
   font-family: $ff-intro;

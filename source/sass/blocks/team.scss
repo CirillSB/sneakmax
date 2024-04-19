@@ -4,10 +4,12 @@
     linear-gradient($color-east-bay);
   padding: sz(60px) 0 sz(59px);
 }
+
 .team__title {
   margin-left: 4px;
   margin-top: -1px;
 }
+
 .team__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

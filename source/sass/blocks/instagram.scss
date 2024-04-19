@@ -17,8 +17,8 @@
   display: grid;
   grid-template-columns: sz(157px) sz(331px) sz(157px);
   grid-template-rows: repeat(2, sz(161px));
-  grid-column-gap: sz(18px); 
-  grid-row-gap: sz(13px); 
+  grid-column-gap: sz(18px);
+  grid-row-gap: sz(13px);
   grid-auto-flow: row;
 }
 
