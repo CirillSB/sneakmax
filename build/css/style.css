@@ -535,7 +535,6 @@ button,
 
 .container {
   width: 61.4583333333%;
-  min-width: 1180px;
   max-width: 2160px;
   margin: 0 auto;
 }
@@ -1217,7 +1216,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.1458333333vw 0;
+  padding: 0.78125vw 0;
   border-bottom: 0.0520833333vw solid #ffffff;
 }
 .navigation--footer {
@@ -1443,7 +1442,6 @@ button,
 
 .filter__price {
   margin: 0 0 0.5208333333vw 0;
-  margin: 0 0 10px 0;
 }
 
 .filter__price-wrapper {
@@ -1597,7 +1595,6 @@ button,
 }
 
 .filter__size-number {
-  padding: 1.0416666667vw;
   padding: 0.9895833333vw 1.0416666667vw 0.6770833333vw;
 }
 
@@ -1767,8 +1764,7 @@ button,
 }
 
 .perfect-pair {
-  padding: 3.125vw 0;
-  padding: 57px 0 59px;
+  padding: 2.96875vw 0 3.0729166667vw;
 }
 
 .perfect-pair__inner {
@@ -2135,7 +2131,6 @@ button,
 }
 
 .questions__item {
-  padding: 1.5625vw 0 0.78125vw;
   border-top: 0.0520833333vw solid #000000;
 }
 .questions__item:last-child {
@@ -2143,9 +2138,7 @@ button,
 }
 
 .questions__details {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  padding: 1.5625vw 0 0.78125vw;
 }
 
 .questions__summary {
