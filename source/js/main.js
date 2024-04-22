@@ -13,6 +13,9 @@ import {
 import {
   setRangeSlider
 } from './modules/range-slider/range-slider';
+import {
+  initMap
+} from './modules/map/init-map';
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -22,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   setRangeSlider();
+  initMap();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
