@@ -1,1 +1,20 @@
-.map {}
+.map {
+  width: 100%;
+  height: 100%;
+  background-color: $color-cameo;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+  // @include vp-1023 {
+  //   height: 335px;
+  // }
+
+  // @include vp-767 {
+  //   height: 316px;
+  // }
+}
+
+// .map.lazy {
+//   background-image: none;
+// }
