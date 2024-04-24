@@ -77,7 +77,7 @@
           <p class="promo__description">
             Мы&nbsp;продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и&nbsp;многие другие по&nbsp;низким ценам
           </p>
-          <a class="promo__link" href="#">
+          <a class="button promo__link" href="#">
             Перейти к&nbsp;покупкам
           </a>
         </div>
@@ -113,12 +113,12 @@
                   Пол
                 </legend>
                 <div class="filter__genders-wrapper">
-                  <input class="filter__gender-button visually-hidden" id="male" type="radio" name="gender">
-                  <label class="filter__gender-label" for="male">
+                  <input class="filter__gender-button visually-hidden" id="male" type="radio" name="gender" tabindex="0">
+                  <label class="filter__gender-label" for="male" tabindex="0">
                     мужской
                   </label>
-                  <input class="filter__gender-button visually-hidden" id="female" type="radio" name="gender" checked>
-                  <label class="filter__gender-label" for="female">
+                  <input class="filter__gender-button visually-hidden" id="female" type="radio" name="gender" tabindex="0" checked>
+                  <label class="filter__gender-label" for="female" tabindex="0">
                     женский
                   </label>
                 </div>
@@ -214,7 +214,7 @@
                     </a>
                   </section>
                 </li>
-<!--                 <li class="assortment-list__item">
+                <!-- <li class="assortment-list__item">
                   <section class="assortment-card">
                     <a class="assortment-card__link" href="#">
                       <picture class="assortment-card__picture">
@@ -425,8 +425,8 @@
           <p class="perfect-pair__text">
             Ответьте на&nbsp;три вопроса и&nbsp;мы&nbsp;вышлем каталог с&nbsp;самыми подходящими для вас моделями
           </p>
-          <form class="perfect-pair__form selection-form" action="#" method="POST">
-            <div class="selection-form__inner selection-form__inner--first-step">
+          <form class="perfect-pair__form selection-form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+            <div class="selection-form__inner selection-form__inner--first-step" data-step-list>
               <h3 class="title selection-form__title">
                 Какой тип кроссовок рассматриваете?
               </h3>
@@ -442,8 +442,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-1" type="checkbox" name="sneackers adidas">
+                    <label class="selection-form__label" for="sneakers-1">
                       кеды
                     </label>
                   </div>
@@ -459,8 +459,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-2" type="checkbox" name="sneackers abibas">
+                    <label class="selection-form__label" for="sneakers-2">
                       кеды
                     </label>
                   </div>
@@ -476,8 +476,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-3" type="checkbox" name="sneackers reebok">
+                    <label class="selection-form__label" for="sneakers-3">
                       кеды
                     </label>
                   </div>
@@ -493,8 +493,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-4" type="checkbox" name="sneackers nike">
+                    <label class="selection-form__label" for="sneakers-4">
                       кеды
                     </label>
                   </div>
@@ -510,8 +510,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-5" type="checkbox" name="sneackers puma">
+                    <label class="selection-form__label" for="sneakers-5">
                       кеды
                     </label>
                   </div>
@@ -527,15 +527,15 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers" type="checkbox">
-                    <label class="selection-form__label" for="sneakers">
+                    <input class="selection-form__checkbox visually-hidden" id="sneakers-6" type="checkbox" name="sneackers solomon">
+                    <label class="selection-form__label" for="sneakers-6">
                       кеды
                     </label>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="selection-form__inner selection-form__inner--second-step visually-hidden">
+            <div class="selection-form__inner selection-form__inner--second-step js-hidden" data-step-list>
               <h3 class="title selection-form__title">
                 Какой размер вам подойдет?
               </h3>
@@ -571,19 +571,13 @@
                 <img src="img/size-mobile@1x.png" width="280" height="293" alt="Кроссовки.">
               </noscript>
             </div>
-            <div class="selection-form__inner selection-form__inner--third-step visually-hidden">
+            <div class="selection-form__inner selection-form__inner--third-step js-hidden" data-step-list>
               <h3 class="title selection-form__title">
                 Уточните какие-либо моменты
               </h3>
               <textarea class="selection-form__textarea" name="additional-wishes" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
             </div>
-            <div class="selection-form__inner selection-form__inner--fifth-step visually-hidden">
-              <!--               <h3 class="title selection-form__title">
-                Ваша подборка готова!
-              </h3> -->
-              <!--               <p class="selection-form__text">
-                Оставьте свои контактные данные, чтобы бы мы могли отправить подготовленный для вас каталог
-              </p> -->
+            <div class="selection-form__inner selection-form__inner--fifth-step js-hidden" data-step-list>
               <fieldset class="selection-form__fieldset">
                 <legend class="selection-form__legend">
                   Получить предложение
@@ -593,30 +587,24 @@
                 </p>
                 <input class="selection-form__feedback" type="text" placeholder="Ваше имя">
                 <input class="selection-form__feedback" type="email" placeholder="E-mail">
-                <button class="selection-form__submit">
+                <button class="selection-form__submit" data-button-get>
                   Получить
                 </button>
               </fieldset>
-              <!--               <svg class="selection-form__svg selection-form__svg--iphone" width="205" height="411">
-                <use xlink:href="img/sprite.svg#iphone-11-pro"></use>
-              </svg> -->
-              <!--               <svg class="selection-form__svg selection-form__svg--sent" width="242" height="521">
-                <use xlink:href="img/sprite.svg#11"></use>
-              </svg> -->
               <div class="iphone">
-                <!--                 <svg class="selection-form__svg selection-form__svg--iphone" width="205" height="411">
-                <use xlink:href="img/sprite.svg#ip"></use>
-              </svg> -->
                 <img class="iphone__svg iphone__svg--iphone" src="img/svg/111.svg" alt="Айфон 11 про.">
-                <img class="iphone__svg iphone__svg--iphone-sent visually-hidden" src="img/svg/112.svg" alt="Айфон 11 про с сообщением.">
-                <img class="iphone__svg iphone__svg--sent visually-hidden" src="img/svg/79.svg" alt="Сообщение отправлено.">
+                <img class="iphone__svg iphone__svg--iphone-sent visually-hidden" data-message src="img/svg/112.svg" alt="Айфон 11 про с сообщением.">
+                <img class="iphone__svg iphone__svg--sent visually-hidden" data-message src="img/svg/79.svg" alt="Сообщение отправлено.">
               </div>
             </div>
-            <div class="selection-btn-wrapper">
+            <div class="selection-btn-wrapper" data-step-field>
               <span class="selection-form__step-number">
-                2 из 3
+                <span data-step-number></span>
+                <span>
+                  из 3
+                </span>
               </span>
-              <button class="button selection-form__slide-button" type="button">
+              <button class="button selection-form__slide-button" type="button" data-slide-button>
                 Следующий шаг
               </button>
             </div>
@@ -744,6 +732,11 @@
               <details class="questions__details">
                 <summary class="questions__summary">
                   Вопрос 1
+                  <span class="questions__plus">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </span>
                 </summary>
                 <p class="questions__text">
                   А&nbsp;это ответ&nbsp;1: в&nbsp;комплексе функционируют 6&nbsp;детских садов с&nbsp;площадками, воспитателями и&nbsp;всякими другими людьми
@@ -754,6 +747,11 @@
               <details class="questions__details">
                 <summary class="questions__summary">
                   Вопрос 2
+                  <span class="questions__plus">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </span>
                 </summary>
                 <p class="questions__text">
                   А&nbsp;это ответ&nbsp;2: в&nbsp;комплексе функционируют 6&nbsp;детских садов с&nbsp;площадками, воспитателями и&nbsp;всякими другими людьми
@@ -835,7 +833,7 @@
           </p>
           <fieldset>
             <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Номер телефона">
+            <input type="tel" placeholder="Номер телефона" data-tel-input>
           </fieldset>
           <button type="submit">
             Отправить

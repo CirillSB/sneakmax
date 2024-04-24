@@ -16,6 +16,15 @@ import {
 import {
   initMap
 } from './modules/map/init-map';
+import {
+  initDetails
+} from './modules/details-accordeon/init-details';
+import {
+  choosePair
+} from './modules/pair-selection/pair-selection';
+import {
+  setMaskTel
+} from './modules/mask-tel/set-mask-tel';
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -34,6 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initDetails();
+    choosePair();
+    setMaskTel();
   });
 });
 // ---------------------------------

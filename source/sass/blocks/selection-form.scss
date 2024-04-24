@@ -1,6 +1,11 @@
+.selection-form {
+  position: relative;
+}
 .selection-form__inner {
   position: relative;
   padding: sz(2px) 0 sz(10px);
+  top: 0;
+  left: 0;
 }
 
 .selection-form__title {
@@ -55,6 +60,28 @@
     top: 50%;
     transform: translate(50%, -50%);
     display: inline-block;
+  }
+
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        // background-color: red;
+        box-shadow: 0 0 sz(10px) rgba(0,0,0,0.5);
+      }
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      // @content;
+      box-shadow: 0 0 sz(10px) red;
+    }
+  }
+
+  @include active {
+    &.focus-visible:active {
+      // @content;
+    }
   }
 }
 
@@ -190,10 +217,10 @@
   background-color: transparent;
 }
 
-.selection-form__checkbox:checked + .selection-form__label::after {
+.selection-form__checkbox:checked+.selection-form__label::after {
   content: "\2713";
 }
 
-.selection-form__size-select:checked + .selection-form__size-label::after {
+.selection-form__size-select:checked+.selection-form__size-label::after {
   content: "\2713";
 }

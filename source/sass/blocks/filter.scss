@@ -108,6 +108,18 @@
   line-height: 16px;
 }
 
+.filter__gender-button:focus + .filter__gender-label {
+  background-color: green;
+}
+
+.filter__gender-button.focus-visible + .filter__gender-label {
+  background-color: red;
+}
+
+.filter__gender-button.focus-visible:active + .filter__gender-label {
+  background-color: blue;
+}
+
 .filter__gender-label {
   position: relative;
   top: sz(5px);
@@ -156,10 +168,24 @@
 
 .filter__size-checkbox {
   position: relative;
+
+  &.focus-visible:focus + .filter__size-number {
+    border-radius: 25%;
+    box-shadow: inset 0 0 sz(10px) $color-river-bed;
+    opacity: 0.5;
+  }
 }
 
 .filter__size-number {
   padding: sz(19px) sz(20px) sz(13px);
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: red;
+      }
+    }
+  }
 }
 
 .filter__button {
@@ -177,12 +203,26 @@
     background-color: transparent;
     color: $color-river-bed;
   }
+
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        background-color: $color-gray;
+      }
+    }
+
+    &.focus-visible:focus {
+      box-shadow: 0 0 sz(10px) $color-gray;
+      border: none;
+      outline: none;
+    }
+  }
 }
 
-.filter__gender-button:checked+.filter__gender-label::after {
+.filter__gender-button:checked + .filter__gender-label::after {
   content: "\2713";
 }
 
-.filter__size-checkbox:checked+.filter__size-number {
+.filter__size-checkbox:checked + .filter__size-number {
   color: $color-red;
 }

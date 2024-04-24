@@ -50,25 +50,24 @@ const initMap = () => {
         //   balloonContent: 'А эта — новогодняя',
         //   iconContent: '12',
         // }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          // iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          // iconImageHref: '',
-          // Размеры метки.
-          // iconImageSize: [48, 48],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          // iconImageOffset: [-24, -24],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          // iconContentOffset: [15, 15],
-          // Макет содержимого.
-          // iconContentLayout: MyIconContentLayout,
+        // Опции.
+        // Необходимо указать данный тип макета.
+        // iconLayout: 'default#imageWithContent',
+        // Своё изображение иконки метки.
+        // iconImageHref: '',
+        // Размеры метки.
+        // iconImageSize: [48, 48],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        // iconImageOffset: [-24, -24],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        // iconContentOffset: [15, 15],
+        // Макет содержимого.
+        // iconContentLayout: MyIconContentLayout,
         // });
-
-        myMap.geoObjects
-            // .add(myPlacemark)
-            // .add(myPlacemarkWithContent);
+        myMap.geoObjects;
+        // .add(myPlacemark)
+        // .add(myPlacemarkWithContent);
       });
     }
   };

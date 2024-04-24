@@ -28,6 +28,7 @@
   width: sz(460px);
   padding: sz(10px) sz(16px);
   border-radius: sz(4px);
+  z-index: 100;
 
   &::before {
     content: "";

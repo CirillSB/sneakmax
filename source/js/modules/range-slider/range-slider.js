@@ -8,8 +8,8 @@ export const setRangeSlider = () => {
       step: 1,
       range: {
         'min': 1500,
-        'max': 9999
-      }
+        'max': 9999,
+      },
     });
   }
   slider.noUiSlider.on('update', (values, handle) => {
