@@ -27,7 +27,7 @@ export const choosePair = () => {
         stepList[i + 1].classList.remove('js-hidden');
         i += 1;
         step.textContent = stepList[i].dataset.dataStepList;
-        if (step.textContent == stepList.length) {
+        if (step.textContent == stepList.length) { /* eslint-disable-line */
           stepField.classList.add('visually-hidden');
           removeEventListenerSlideButton();
         }

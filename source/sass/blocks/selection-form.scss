@@ -1,6 +1,7 @@
 .selection-form {
   position: relative;
 }
+
 .selection-form__inner {
   position: relative;
   padding: sz(2px) 0 sz(10px);
@@ -65,8 +66,7 @@
   @include hover {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        // background-color: red;
-        box-shadow: 0 0 sz(10px) rgba(0,0,0,0.5);
+        box-shadow: 0 0 sz(10px) $color-shadow;
       }
     }
   }
@@ -74,7 +74,7 @@
   @include focus {
     &.focus-visible:focus {
       // @content;
-      box-shadow: 0 0 sz(10px) red;
+      box-shadow: 0 0 sz(10px) $color-mine-shaft;
     }
   }
 
@@ -217,10 +217,10 @@
   background-color: transparent;
 }
 
-.selection-form__checkbox:checked+.selection-form__label::after {
+.selection-form__checkbox:checked + .selection-form__label::after {
   content: "\2713";
 }
 
-.selection-form__size-select:checked+.selection-form__size-label::after {
+.selection-form__size-select:checked + .selection-form__size-label::after {
   content: "\2713";
 }

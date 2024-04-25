@@ -1564,15 +1564,18 @@ button,
 }
 
 .filter__gender-button:focus + .filter__gender-label {
-  background-color: green;
+  -webkit-box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
 }
 
 .filter__gender-button.focus-visible + .filter__gender-label {
-  background-color: red;
+  -webkit-box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
 }
 
 .filter__gender-button.focus-visible:active + .filter__gender-label {
-  background-color: blue;
+  -webkit-box-shadow: 0 0 0.2604166667vw rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0.2604166667vw rgba(255, 255, 255, 0.5);
 }
 
 .filter__gender-label {
@@ -1580,6 +1583,7 @@ button,
   top: 0.2604166667vw;
   font-size: 0.8333333333vw;
   line-height: 0.8333333333vw;
+  cursor: pointer;
 }
 .filter__gender-label::before {
   content: "";
@@ -1640,15 +1644,18 @@ button,
 
 .filter__size-number {
   padding: 0.9895833333vw 1.0416666667vw 0.6770833333vw;
+  cursor: pointer;
 }
 @media (hover: hover) and (hover: hover) {
   .filter__size-number:hover:not(.focus-visible):hover:not(.focus-visible) {
-    background-color: red;
+    -webkit-box-shadow: inset 0 0 0.78125vw #ff0000;
+            box-shadow: inset 0 0 0.78125vw #ff0000;
   }
 }
 @media (hover: hover) {
   .filter__size-number.focus-visible:focus:hover:not(.focus-visible) {
-    background-color: red;
+    -webkit-box-shadow: inset 0 0 0.78125vw #ff0000;
+            box-shadow: inset 0 0 0.78125vw #ff0000;
   }
 }
 
@@ -1669,7 +1676,6 @@ button,
 @media (hover: hover) and (hover: hover) {
   .filter__button:hover:not(.focus-visible):hover:not(.focus-visible) {
     background-color: #808080;
-    brightnes: 1.5;
   }
 }
 @media (hover: hover) {
@@ -1683,7 +1689,6 @@ button,
 @media (hover: hover) {
   .filter__button.focus-visible:focus:hover:not(.focus-visible) {
     background-color: #808080;
-    brightnes: 1.5;
   }
 }
 .filter__button.focus-visible:focus.focus-visible:focus {
@@ -1961,13 +1966,13 @@ button,
 }
 @media (hover: hover) and (hover: hover) {
   .selection-form__label:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: 0 0 0.5208333333vw rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 0.5208333333vw rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
   }
 }
 .selection-form__label.focus-visible:focus.focus-visible:focus {
-  -webkit-box-shadow: 0 0 0.5208333333vw red;
-          box-shadow: 0 0 0.5208333333vw red;
+  -webkit-box-shadow: 0 0 0.5208333333vw #242424;
+          box-shadow: 0 0 0.5208333333vw #242424;
 }
 .selection-form__size-list {
   margin: 0 0 0.78125vw 0;
@@ -2352,7 +2357,6 @@ button,
   font-size: 0.7291666667vw;
   font-weight: 400;
   line-height: 1.0416666667vw;
-  letter-spacing: 0.08em;
   letter-spacing: normal;
   color: #b2b5bb;
   margin: 0 0 1.09375vw 0;
@@ -2450,7 +2454,7 @@ button,
 }
 
 .socials__link.focus-visible:focus.focus-visible:focus {
-  outline-color: #0E5A4C;
+  outline-color: #0e5a4c;
   border-radius: 100%;
 }
 .socials__link.focus-visible:active.focus-visible:active {
@@ -2462,8 +2466,8 @@ button,
 }
 @media (hover: hover) and (hover: hover) {
   .socials__link svg:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: 0 0 0.5208333333vw #0E5A4C;
-            box-shadow: 0 0 0.5208333333vw #0E5A4C;
+    -webkit-box-shadow: 0 0 0.5208333333vw #0e5a4c;
+            box-shadow: 0 0 0.5208333333vw #0e5a4c;
   }
 }
 

@@ -2,7 +2,7 @@ export const setRangeSlider = () => {
   const slider = document.querySelector('[data-range-slider]');
   const fields = document.querySelectorAll('[data-slider-field]');
   if (slider) {
-    noUiSlider.create(slider, {
+    noUiSlider.create(slider, {/* eslint-disable-line */
       start: [1500, 9999],
       connect: true,
       step: 1,
