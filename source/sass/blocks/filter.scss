@@ -125,6 +125,15 @@
 
 .filter__gender-button.focus-visible:active + .filter__gender-label {
   box-shadow: 0 0 sz(15px) $color-river-bed;
+
+}
+
+.filter__gender-button.focus-visible + .filter__gender-label {
+  box-shadow: 0 0 sz(10px) $color-shadow;
+}
+
+.filter__gender-button.focus-visible:active + .filter__gender-label {
+  box-shadow: 0 0 sz(5px) $color-shadow;
 }
 
 .filter__gender-label {
@@ -134,6 +143,7 @@
   line-height: sz(16px);
   font-size: 16px;
   line-height: 16px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -187,6 +197,7 @@
 
 .filter__size-number {
   padding: sz(19px) sz(20px) sz(13px);
+  cursor: pointer;
 
   @include hover-focus {
     @media (hover: hover) {

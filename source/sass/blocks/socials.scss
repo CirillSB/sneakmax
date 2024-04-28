@@ -16,7 +16,6 @@
 }
 
 .socials__link {
-  
   @include focus {
     &.focus-visible:focus {
       outline-color: #0e5a4c;

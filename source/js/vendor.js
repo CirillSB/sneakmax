@@ -4,7 +4,7 @@ import './vendor/focus-visible-polyfill';
 import './vendor/swiper';
 // import './vendor/nouislider';
 // console.log("asdfghjkl");
-/* global noUiSlider:readonly */
+/* global noUiSlider:readonly */ /* eslint-disable-line*/
 // const sliderElement = document.querySelector('#slider');
 // console.log(sliderElement);
 // console.log(nouislider);

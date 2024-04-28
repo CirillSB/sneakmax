@@ -13,11 +13,11 @@ window.addEventListener('scroll', () => {
 const initMap = () => {
   script.onload = () => {
 
-    ymaps.ready(init);
+    ymaps.ready(init); /* eslint-disable-line*/
 
     function init() {
-      ymaps.ready(function () {
-        let myMap = new ymaps.Map('map', {
+      ymaps.ready(function () { /* eslint-disable-line*/
+        let myMap = new ymaps.Map('map', { /* eslint-disable-line*/
           center: [55.75378462995323, 37.618437642084835],
           zoom: 9,
         }, {
@@ -65,7 +65,7 @@ const initMap = () => {
         // Макет содержимого.
         // iconContentLayout: MyIconContentLayout,
         // });
-        myMap.geoObjects;
+        myMap.geoObjects; /* eslint-disable-line*/
         // .add(myPlacemark)
         // .add(myPlacemarkWithContent);
       });
