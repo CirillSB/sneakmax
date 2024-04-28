@@ -16,6 +16,8 @@
   font-weight: 700;
   font-size: sz(30px);
   line-height: sz(26px);
+  font-size: 30px;
+  line-height: 26px;
   color: $color-default-white;
 }
 
@@ -41,8 +43,10 @@
 .navigation__link {
   font-family: $ff-default;
   font-size: sz(14px);
+  font-size: 14px;
   font-weight: 400;
   line-height: sz(14px);
+  line-height: 14px;
   color: $color-default-white;
 
   @include hover-focus {

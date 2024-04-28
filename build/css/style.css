@@ -534,6 +534,7 @@ button,
 }
 
 .container {
+  min-width: 1180px;
   width: 61.4583333333%;
   max-width: 2160px;
   margin: 0 auto;
@@ -1229,6 +1230,8 @@ button,
   font-weight: 700;
   font-size: 1.5625vw;
   line-height: 1.3541666667vw;
+  font-size: 30px;
+  line-height: 26px;
   color: #ffffff;
 }
 
@@ -1265,8 +1268,10 @@ button,
 .navigation__link {
   font-family: "Intro-Book", "Arial", sans-serif;
   font-size: 0.7291666667vw;
+  font-size: 14px;
   font-weight: 400;
   line-height: 0.7291666667vw;
+  line-height: 14px;
   color: #ffffff;
 }
 @media (hover: hover) and (hover: hover) {
@@ -1343,6 +1348,8 @@ button,
   margin: 0 55% 2.0833333333vw 0;
   font-size: 0.8333333333vw;
   line-height: 1.1458333333vw;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 
@@ -1353,6 +1360,8 @@ button,
   font-family: "Intro", "Arial", sans-serif;
   font-size: 0.8333333333vw;
   line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
   color: #ffffff;
   background-color: #f14f4f;
 }
@@ -1363,6 +1372,8 @@ button,
   font-weight: 400;
   font-size: 1.875vw;
   line-height: 2.6041666667vw;
+  font-size: 36px;
+  line-height: 50px;
   color: #ffffff;
 }
 
@@ -1382,6 +1393,7 @@ button,
 
 .catalog__filter-wrapper {
   padding: 1.0416666667vw;
+  padding: 20px;
 }
 
 .catalog__assortment-wrapper {
@@ -1430,7 +1442,10 @@ button,
   font-size: 1.5625vw;
   font-weight: 700;
   line-height: 1.5625vw;
+  font-size: 30px;
+  line-height: 30px;
   margin: 0 0 2.0833333333vw 0;
+  margin: 0 0 40px 0;
 }
 .title--white {
   color: #ffffff;
@@ -1448,20 +1463,23 @@ button,
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .filter__title {
   margin: 0 0 1.0416666667vw 0;
+  margin: 0 0 20px 0;
   font-size: 1.25vw;
   font-weight: 400;
   line-height: 1.25vw;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .filter__subtitle {
-  margin: 0 0 0.46875vw 0;
+  margin: 0 0 9px 0;
   font-size: 16px;
   line-height: 16px;
 }
@@ -1563,16 +1581,23 @@ button,
   line-height: 16px;
 }
 
+.filter__gender-button:focus {
+  border: none;
+}
+
 .filter__gender-button:focus + .filter__gender-label {
-  background-color: green;
+  -webkit-box-shadow: 0 0 0.2604166667vw #444b58;
+          box-shadow: 0 0 0.2604166667vw #444b58;
 }
 
 .filter__gender-button.focus-visible + .filter__gender-label {
-  background-color: red;
+  -webkit-box-shadow: 0 0 0.2604166667vw #444b58;
+          box-shadow: 0 0 0.2604166667vw #444b58;
 }
 
 .filter__gender-button.focus-visible:active + .filter__gender-label {
-  background-color: blue;
+  -webkit-box-shadow: 0 0 0.78125vw #444b58;
+          box-shadow: 0 0 0.78125vw #444b58;
 }
 
 .filter__gender-label {
@@ -1580,6 +1605,8 @@ button,
   top: 0.2604166667vw;
   font-size: 0.8333333333vw;
   line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
 }
 .filter__gender-label::before {
   content: "";
@@ -1643,12 +1670,14 @@ button,
 }
 @media (hover: hover) and (hover: hover) {
   .filter__size-number:hover:not(.focus-visible):hover:not(.focus-visible) {
-    background-color: red;
+    -webkit-box-shadow: inset 0 0 0.5208333333vw #444b58;
+            box-shadow: inset 0 0 0.5208333333vw #444b58;
   }
 }
 @media (hover: hover) {
   .filter__size-number.focus-visible:focus:hover:not(.focus-visible) {
-    background-color: red;
+    -webkit-box-shadow: inset 0 0 0.5208333333vw #444b58;
+            box-shadow: inset 0 0 0.5208333333vw #444b58;
   }
 }
 
@@ -1665,11 +1694,11 @@ button,
 .filter__button--reset {
   background-color: transparent;
   color: #444b58;
+  margin: 0 auto;
 }
 @media (hover: hover) and (hover: hover) {
   .filter__button:hover:not(.focus-visible):hover:not(.focus-visible) {
     background-color: #808080;
-    brightnes: 1.5;
   }
 }
 @media (hover: hover) {
@@ -1683,7 +1712,6 @@ button,
 @media (hover: hover) {
   .filter__button.focus-visible:focus:hover:not(.focus-visible) {
     background-color: #808080;
-    brightnes: 1.5;
   }
 }
 .filter__button.focus-visible:focus.focus-visible:focus {
@@ -1706,6 +1734,8 @@ button,
   font-size: 0.8333333333vw;
   font-weight: 400;
   line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
   border: none;
   cursor: pointer;
 }
@@ -1740,18 +1770,24 @@ button,
 
 .assortment-card__image {
   margin-bottom: 0.5208333333vw;
+  margin-bottom: 10px;
 }
 
 .assortment-card__title {
   font-size: 0.8333333333vw;
   line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
   margin: 0 0 0.5208333333vw 0;
+  margin: 0 0 10px 0;
 }
 
 .assortment-card__price {
   font-family: "Intro", "Arial", sans-serif;
   font-size: 1.0416666667vw;
   line-height: 1.0416666667vw;
+  font-size: 20px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -1825,14 +1861,18 @@ button,
 
 .about-us__title {
   margin: 0 0 1.09375vw 0;
+  margin: 0 0 21px 0;
 }
 
 .about-us__quote {
   width: 89%;
   margin: 0 0 1.0416666667vw 0;
+  margin: 0 0 20px 0;
   font-family: "Intro-Book", "Arial", sans-serif;
   font-size: 0.8333333333vw;
   line-height: 1.1458333333vw;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 
@@ -1842,6 +1882,8 @@ button,
   font-size: 1.0416666667vw;
   font-weight: 700;
   line-height: 1.0416666667vw;
+  font-size: 20px;
+  line-height: 20px;
   color: #ffffff;
   display: block;
   text-align: right;
@@ -1870,18 +1912,24 @@ button,
 
 .perfect-pair__title {
   margin-bottom: 1.0416666667vw;
+  margin-bottom: 20px;
 }
 
 .perfect-pair__text {
   margin: 0 0 0.78125vw 0;
+  margin: 0 0 15px 0;
   padding-bottom: 0.625vw;
+  padding-bottom: 12px;
   border-bottom: 0.0520833333vw solid #808080;
   line-height: 0.8333333333vw;
+  line-height: 16px;
   color: #808080;
 }
 .perfect-pair__text--final {
   font-size: 0.9375vw;
   line-height: 0.8333333333vw;
+  font-size: 18px;
+  line-height: 16px;
   color: #dbbba9;
 }
 
@@ -1904,9 +1952,12 @@ button,
   font-family: "Intro-Book", "Arial", sans-serif;
   font-size: 1.25vw;
   line-height: 1.25vw;
+  font-size: 24px;
+  line-height: 24px;
   margin: 0;
   color: #444b58;
   margin-bottom: 1.1979166667vw;
+  margin-bottom: 23px;
 }
 
 .selection-form__type-list {
@@ -1971,6 +2022,7 @@ button,
 }
 .selection-form__size-list {
   margin: 0 0 0.78125vw 0;
+  margin: 0 0 15px 0;
   padding: 0;
   list-style-type: none;
   display: -webkit-box;
@@ -2109,6 +2161,7 @@ button,
 
 .selection-form__step-number {
   line-height: 0.8333333333vw;
+  line-height: s16px;
 }
 
 .selection-form__slide-button {
@@ -2118,6 +2171,8 @@ button,
   font-family: "Intro", "Arial", sans-serif;
   font-size: 0.8333333333vw;
   line-height: 0.8333333333vw;
+  font-size: 16px;
+  line-height: 16px;
   color: #444b58;
   background-color: transparent;
 }
@@ -2201,6 +2256,7 @@ button,
 
 .team__image {
   margin-bottom: 0.9895833333vw;
+  margin-bottom: 19px;
   border-radius: 0.2083333333vw;
 }
 
@@ -2209,8 +2265,11 @@ button,
   font-weight: 700;
   font-size: 1.25vw;
   line-height: 1.25vw;
+  font-size: 24px;
+  line-height: 24px;
   color: #ffffff;
   margin-bottom: 0.78125vw;
+  margin-bottom: 15px;
 }
 
 .team__member-position {
@@ -2232,6 +2291,7 @@ button,
 
 .questions__title {
   margin-bottom: 2.1354166667vw;
+  margin-bottom: 41px;
 }
 
 .questions__list {
@@ -2258,6 +2318,8 @@ button,
   font-size: 1.0416666667vw;
   font-weight: 400;
   line-height: 1.0416666667vw;
+  font-size: 20px;
+  line-height: 20px;
   color: #242424;
   padding: 1.5625vw 0 1.09375vw;
 }
@@ -2308,6 +2370,7 @@ button,
   -ms-grid-column: 1;
   grid-area: title;
   margin-bottom: 3.125vw;
+  margin-bottom: 60px;
 }
 
 .contacts__address {
@@ -2315,6 +2378,7 @@ button,
   -ms-grid-column: 1;
   grid-area: address;
   margin-bottom: 1.0416666667vw;
+  margin-bottom: 20px;
 }
 
 .contacts__socials {
@@ -2342,6 +2406,7 @@ button,
 
 .address__item {
   margin-bottom: 1.9791666667vw;
+  margin-bottom: 38px;
   position: relative;
 }
 .address__item:last-child {
@@ -2352,10 +2417,12 @@ button,
   font-size: 0.7291666667vw;
   font-weight: 400;
   line-height: 1.0416666667vw;
-  letter-spacing: 0.08em;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: normal;
   color: #b2b5bb;
   margin: 0 0 1.09375vw 0;
+  margin: 0 0 21px 0;
 }
 .address__title--first {
   margin: 0 0 41px 0;
@@ -2367,11 +2434,16 @@ button,
   font-size: 1.5625vw;
   line-height: 2.1875vw;
   margin-bottom: 0.5208333333vw;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 10px;
 }
 
 .address__data {
   font-size: 0.9375vw;
   line-height: 1.3020833333vw;
+  font-size: 18px;
+  line-height: 25px;
   color: #444b58;
 }
 
@@ -2383,8 +2455,11 @@ button,
 
 .tooltip__button {
   display: inline-block;
+  display: block;
   width: 1.0416666667vw;
   height: 1.0416666667vw;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: none;
   background: url("../img/svg/question.svg") 50% 50%/50% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#ffffff));
@@ -2415,6 +2490,7 @@ button,
   left: 4%;
   border: 9px solid transparent;
   border-top: 9px solid #ffffff;
+  pointer-events: none;
 }
 
 .tooltip__button:hover + .tooltip__text {
@@ -2450,7 +2526,7 @@ button,
 }
 
 .socials__link.focus-visible:focus.focus-visible:focus {
-  outline-color: #0E5A4C;
+  outline-color: #0e5a4c;
   border-radius: 100%;
 }
 .socials__link.focus-visible:active.focus-visible:active {
@@ -2462,8 +2538,8 @@ button,
 }
 @media (hover: hover) and (hover: hover) {
   .socials__link svg:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: 0 0 0.5208333333vw #0E5A4C;
-            box-shadow: 0 0 0.5208333333vw #0E5A4C;
+    -webkit-box-shadow: 0 0 0.5208333333vw #0e5a4c;
+            box-shadow: 0 0 0.5208333333vw #0e5a4c;
   }
 }
 
@@ -2501,26 +2577,32 @@ button,
 }
 .callback-form h2 {
   margin-bottom: 1.0416666667vw;
+  margin-bottom: 20px;
 }
 .callback-form p {
   line-height: 0.8333333333vw;
+  line-height: 16px;
   color: #ffffff;
   width: 67%;
   text-align: center;
   margin: 0 0 2.0833333333vw 0;
+  margin: 0 0 40px 0;
 }
 .callback-form fieldset {
   margin-bottom: 0.3645833333vw;
+  margin-bottom: 7px;
   padding: 0;
   border: none;
 }
 .callback-form input {
   margin-bottom: 0.46875vw;
+  margin-bottom: 9px;
   padding: 0.9895833333vw;
   border-radius: 0.2083333333vw;
   border: none;
   width: 100%;
   line-height: 1.1458333333vw;
+  line-height: 22px;
 }
 .callback-form input:last-of-type {
   margin: 0;
@@ -2549,6 +2631,7 @@ button,
   color: #ffffff;
   font-family: "Intro", "Arial", sans-serif;
   line-height: 0.8333333333vw;
+  line-height: 16px;
   cursor: pointer;
 }
 @media (hover: hover) and (hover: hover) {

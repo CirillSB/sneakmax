@@ -12,9 +12,12 @@
   font-family: $ff-default;
   font-size: sz(24px);
   line-height: sz(24px);
+  font-size: 24px;
+  line-height: 24px;
   margin: 0;
   color: $color-river-bed;
   margin-bottom: sz(23px);
+  margin-bottom: 23px;
 }
 
 .selection-form__type-list {
@@ -87,6 +90,7 @@
 
 .selection-form__size-list {
   margin: 0 0 sz(15px) 0;
+  margin: 0 0 15px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -204,6 +208,7 @@
 
 .selection-form__step-number {
   line-height: sz(16px);
+  line-height: s16px;
 }
 
 .selection-form__slide-button {
@@ -213,6 +218,8 @@
   font-family: $ff-intro;
   font-size: sz(16px);
   line-height: sz(16px);
+  font-size: 16px;
+  line-height: 16px;
   color: $color-river-bed;
   background-color: transparent;
 }

@@ -10,6 +10,7 @@
 
 .address__item {
   margin-bottom: sz(38px);
+  margin-bottom: 38px;
   position: relative;
 
   &:last-child {
@@ -21,9 +22,12 @@
   font-size: sz(14px);
   font-weight: 400;
   line-height: sz(20px);
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: normal;
   color: $color-bombay;
   margin: 0 0 sz(21px) 0;
+  margin: 0 0 21px 0;
 
   &--first {
     margin: 0 0 41px 0;
@@ -36,10 +40,15 @@
   font-size: sz(30px);
   line-height: sz(42px);
   margin-bottom: sz(10px);
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 10px;
 }
 
 .address__data {
   font-size: sz(18px);
   line-height: sz(25px);
+  font-size: 18px;
+  line-height: 25px;
   color: $color-river-bed;
 }

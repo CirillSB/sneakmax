@@ -3,18 +3,21 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .filter__title {
   margin: 0 0 sz(20px) 0;
+  margin: 0 0 20px 0;
   font-size: sz(24px);
   font-weight: 400;
   line-height: sz(24px);
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .filter__subtitle {
-  margin: 0 0 sz(9px) 0;
+  margin: 0 0 9px 0;
   font-size: 16px;
   line-height: 16px;
 }
@@ -108,16 +111,20 @@
   line-height: 16px;
 }
 
+.filter__gender-button:focus {
+  border: none;
+}
+
 .filter__gender-button:focus + .filter__gender-label {
-  background-color: green;
+  box-shadow: 0 0 sz(5px) $color-river-bed;
 }
 
 .filter__gender-button.focus-visible + .filter__gender-label {
-  background-color: red;
+  box-shadow: 0 0 sz(5px) $color-river-bed;
 }
 
 .filter__gender-button.focus-visible:active + .filter__gender-label {
-  background-color: blue;
+  box-shadow: 0 0 sz(15px) $color-river-bed;
 }
 
 .filter__gender-label {
@@ -125,6 +132,8 @@
   top: sz(5px);
   font-size: sz(16px);
   line-height: sz(16px);
+  font-size: 16px;
+  line-height: 16px;
 
   &::before {
     content: "";
@@ -182,7 +191,7 @@
   @include hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        background-color: red;
+        box-shadow: inset 0 0 sz(10px) $color-river-bed;
       }
     }
   }
@@ -202,6 +211,7 @@
   &--reset {
     background-color: transparent;
     color: $color-river-bed;
+    margin: 0 auto;
   }
 
   @include hover-focus {

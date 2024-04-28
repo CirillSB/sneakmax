@@ -21,14 +21,18 @@
 
 .about-us__title {
   margin: 0 0 sz(21px) 0;
+  margin: 0 0 21px 0;
 }
 
 .about-us__quote {
   width: 89%;
   margin: 0 0 sz(20px) 0;
+  margin: 0 0 20px 0;
   font-family: $ff-default;
   font-size: sz(16px);
   line-height: sz(22px);
+  font-size: 16px;
+  line-height: 22px;
   color: $color-default-white;
 }
 
@@ -38,6 +42,8 @@
   font-size: sz(20px);
   font-weight: 700;
   line-height: sz(20px);
+  font-size: 20px;
+  line-height: 20px;
   color: $color-default-white;
   display: block;
   text-align: right;
