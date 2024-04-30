@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   background-color: $color-east-bay;
-  padding: sz(165px) 0 sz(101px);
+  padding: 165px 0 101px;
   background-image: url("../img/svg/back-text.svg");
   background-repeat: no-repeat;
   background-position: 54% 66%;
@@ -9,9 +9,7 @@
 }
 
 .promo__description {
-  margin: 0 55% sz(40px) 0;
-  font-size: sz(16px);
-  line-height: sz(22px);
+  margin: 0 55% 40px 0;
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
@@ -19,11 +17,9 @@
 
 .promo__link {
   display: inline-block;
-  padding: sz(22px) sz(47px);
+  padding: 22px 47px;
   border-radius: sz(4px);
   font-family: $ff-intro;
-  font-size: sz(16px);
-  line-height: sz(16px);
   font-size: 16px;
   line-height: 16px;
   color: $color-default-white;

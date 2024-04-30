@@ -1,30 +1,24 @@
 .perfect-pair {
-  padding: sz(57px) 0 sz(59px);
+  padding: 57px 0 59px;
 }
 
 .perfect-pair__inner {
-  padding: sz(40px) sz(100px);
+  padding: 40px 100px;
   background-color: $color-seashell-peach;
 }
 
 .perfect-pair__title {
-  margin-bottom: sz(20px);
   margin-bottom: 20px;
 }
 
 .perfect-pair__text {
-  margin: 0 0 sz(15px) 0;
   margin: 0 0 15px 0;
-  padding-bottom: sz(12px);
   padding-bottom: 12px;
   border-bottom: sz(1px) solid $color-gray;
-  line-height: sz(16px);
   line-height: 16px;
   color: $color-gray;
 
   &--final {
-    font-size: sz(18px);
-    line-height: sz(16px);
     font-size: 18px;
     line-height: 16px;
     color: $color-cameo;

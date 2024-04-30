@@ -1,21 +1,15 @@
 .assortment-card__image {
-  margin-bottom: sz(10px);
   margin-bottom: 10px;
 }
 
 .assortment-card__title {
-  font-size: sz(16px);
-  line-height: sz(16px);
   font-size: 16px;
   line-height: 16px;
-  margin: 0 0 sz(10px) 0;
   margin: 0 0 10px 0;
 }
 
 .assortment-card__price {
   font-family: $ff-intro;
-  font-size: sz(20px);
-  line-height: sz(20px);
   font-size: 20px;
   line-height: 20px;
   margin: 0;

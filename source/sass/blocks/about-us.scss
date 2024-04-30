@@ -12,25 +12,33 @@
 
 .about-us__picture {
   clip-path: polygon(26.5% 0, 100% 0, 73.5% 100%, 0 100%);
+
+  @include tablet {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .about-us__promo {
   width: 38%;
-  padding: sz(218px) 0 0 sz(5px);
+  padding: 218px 0 0 5px;
+
+  @include tablet {
+    min-width: auto;
+    padding: sz-t(15px) 0 0 0;
+  }
 }
 
 .about-us__title {
-  margin: 0 0 sz(21px) 0;
   margin: 0 0 21px 0;
 }
 
 .about-us__quote {
   width: 89%;
-  margin: 0 0 sz(20px) 0;
   margin: 0 0 20px 0;
   font-family: $ff-default;
-  font-size: sz(16px);
-  line-height: sz(22px);
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
@@ -39,9 +47,7 @@
 .about-us__quote-author {
   position: relative;
   font-family: $ff-intro;
-  font-size: sz(20px);
   font-weight: 700;
-  line-height: sz(20px);
   font-size: 20px;
   line-height: 20px;
   color: $color-default-white;

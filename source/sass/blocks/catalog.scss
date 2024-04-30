@@ -1,16 +1,15 @@
 .catalog {
-  padding: sz(59px) 0;
+  padding: 59px 0;
 }
 
 .catalog__content {
   display: grid;
-  grid-template-columns: sz(280px) 1fr;
+  grid-template-columns: 280px 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: sz(20px);
 }
 
 .catalog__filter-wrapper {
-  padding: sz(20px);
   padding: 20px;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .catalog__assortment {
-  margin: 0 0 sz(40px) 0;
+  margin: 0 0 40px 0;
 }
 
 .catalog__button-wrapper {
@@ -35,7 +34,6 @@
   color: $color-default-white;
   background-color: $color-carnation;
   border-radius: sz(4px);
-  width: sz(200px);
-  margin: sz(2px) 0 0 sz(-20px);
-  padding: sz(22px);
+  margin: 2px 0 0 -20px;
+  padding: 22px 48px;
 }

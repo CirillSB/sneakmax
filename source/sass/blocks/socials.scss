@@ -1,14 +1,14 @@
 .socials {
   list-style-type: none;
   margin: 0;
-  padding: sz(40px) 0 0 0;
+  padding: 40px 0 0 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .socials__item {
-  margin-right: sz(20px);
+  margin-right: 20px;
 
   &:last-child {
     margin-right: 0;

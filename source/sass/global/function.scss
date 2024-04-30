@@ -2,6 +2,10 @@
   @return calc($size-in-px / $vp-1920 * 100vw);
 }
 
+@function sz-t($size-in-px) {
+  @return calc($size-in-px / $vp-780 * 100vw);
+}
+
 @function sz-m($size-in-px) {
   @return calc($size-in-px / $vp-375 * 100vw);
 }

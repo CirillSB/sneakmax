@@ -3,7 +3,7 @@
   width: 100%;
   background-color: $color-bombay;
   border: none;
-  height: sz(2px);
+  height: 2px;
 }
 
 // Шкала внутри ползунков
@@ -17,10 +17,10 @@
 .noUi-handle {
   box-shadow: none;
   transform: translate(50%, -50%);
-  width: sz(5px);
-  height: sz(20px);
+  width: 5px;
+  height: 20px;
   border-radius: sz(3px);
-  border: sz(1px) solid $color-default-white;
+  border: 1px solid $color-default-white;
   background-color: $color-river-bed;
   cursor: pointer;
 
@@ -31,8 +31,8 @@
 }
 
 .noUi-horizontal .noUi-handle {
-  width: sz(5px);
-  height: sz(20px);
+  width: 5px;
+  height: 20px;
   top: 0;
   right: 0;
 }

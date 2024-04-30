@@ -4,20 +4,21 @@
 
 .selection-form__inner {
   position: relative;
-  padding: sz(2px) 0 sz(10px);
+  padding: 2px 0 10px;
   top: 0;
   left: 0;
+
+  @include tablet {
+    padding: 5px 0 20px;
+  }
 }
 
 .selection-form__title {
   font-family: $ff-default;
-  font-size: sz(24px);
-  line-height: sz(24px);
   font-size: 24px;
   line-height: 24px;
   margin: 0;
   color: $color-river-bed;
-  margin-bottom: sz(23px);
   margin-bottom: 23px;
 }
 
@@ -30,19 +31,23 @@
   grid-template-rows: repeat(2, auto);
   grid-column-gap: sz(70px);
   grid-row-gap: sz(20px);
+
+  @include tablet {
+    grid-row-gap: sz-t(20px);
+  }  
 }
 
 .selection-form__picture {
-  margin-bottom: sz(10px);
+  margin-bottom: 10px;
 }
 
 .selection-form__image {
-  margin-bottom: sz(10px);
+  margin-bottom: 10px;
 }
 
 .selection-form__label {
   position: relative;
-  padding-left: sz(36px);
+  padding-left: 36px;
   font-family: $ff-intro;
 
   &::before {
@@ -52,8 +57,8 @@
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: sz(24px);
-    height: sz(24px);
+    width: 24px;
+    height: 24px;
     border-radius: sz(4px);
     border: sz(1px) solid $color-cameo;
   }
@@ -76,20 +81,16 @@
 
   @include focus {
     &.focus-visible:focus {
-      // @content;
       box-shadow: 0 0 sz(10px) $color-mine-shaft;
     }
   }
 
   @include active {
-    &.focus-visible:active {
-      // @content;
-    }
+    &.focus-visible:active {}
   }
 }
 
 .selection-form__size-list {
-  margin: 0 0 sz(15px) 0;
   margin: 0 0 15px 0;
   padding: 0;
   list-style-type: none;
@@ -100,7 +101,7 @@
 
 .selection-form__size-label {
   position: relative;
-  padding-left: sz(30px);
+  padding-left: 30px;
 
   &::before {
     content: "";
@@ -109,8 +110,8 @@
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: sz(24px);
-    height: sz(24px);
+    width: 24px;
+    height: 24px;
     border-radius: sz(4px);
     border: sz(1px) solid $color-cameo;
   }
@@ -127,19 +128,23 @@
 .selection-form__textarea {
   border: none;
   border-radius: sz(4px);
-  padding: sz(20px);
+  padding: 20px;
 
   &::placeholder {
     color: $color-cameo;
+  }
+
+  @include tablet {
+    width: 100%;
   }
 }
 
 .selection-form__text {
   &--last {
-    margin: 0 0 sz(20px) 0;
+    margin: 0 0 20px 0;
     font-family: $ff-default;
-    font-size: sz(18px);
-    line-height: sz(25px);
+    font-size: 18px;
+    line-height: 25px;
     color: $color-default-white;
   }
 }
@@ -149,26 +154,26 @@
   background-color: $color-cameo;
   border: none;
   margin: 0;
-  padding: sz(90px) sz(40px) sz(40px);
+  padding: 90px 40px 40px;
 }
 
 .selection-form__legend {
   position: absolute;
-  top: sz(40px);
+  top: 40px;
   font-family: $ff-intro;
-  font-size: sz(36px);
+  font-size: 36px;
   font-weight: 700;
-  line-height: sz(50px);
+  line-height: 50px;
   color: $color-default-white;
 }
 
 .selection-form__feedback {
   border: none;
-  padding: sz(18px);
+  padding: 18px;
   display: block;
-  width: sz(500px);
+  width: 500px;
   border-radius: sz(4px);
-  margin-bottom: sz(10px);
+  margin-bottom: 10px;
 
   &:last-of-type {
     margin-bottom: sz(25px);
@@ -192,14 +197,14 @@
   border: none;
   border-radius: sz(4px);
   font-family: $ff-intro;
-  font-size: sz(16px);
-  line-height: sz(16px);
-  width: sz(220px);
-  padding: sz(23px);
+  font-size: 16px;
+  line-height: 16px;
+  width: 220px;
+  padding: 23px;
 }
 
 .selection-btn-wrapper {
-  padding: sz(6px) 0 0 0;
+  padding: 6px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,17 +212,14 @@
 }
 
 .selection-form__step-number {
-  line-height: sz(16px);
-  line-height: s16px;
+  line-height: 16px;
 }
 
 .selection-form__slide-button {
-  padding: sz(24px) sz(40px) sz(22px);
+  padding: 24px 40px 22px;
   border-radius: sz(4px);
   border: sz(1px) solid $color-river-bed;
   font-family: $ff-intro;
-  font-size: sz(16px);
-  line-height: sz(16px);
   font-size: 16px;
   line-height: 16px;
   color: $color-river-bed;

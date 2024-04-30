@@ -7,11 +7,8 @@
 }
 
 .filter__title {
-  margin: 0 0 sz(20px) 0;
   margin: 0 0 20px 0;
-  font-size: sz(24px);
   font-weight: 400;
-  line-height: sz(24px);
   font-size: 24px;
   line-height: 24px;
 }
@@ -23,7 +20,7 @@
 }
 
 .filter__price {
-  margin: 0 0 sz(10px) 0;
+  margin: 0 0 10px 0;
 }
 
 .filter__price-wrapper {
@@ -35,7 +32,7 @@
   border-left: sz(1px) solid $color-bombay;
   border-right: sz(1px) solid $color-bombay;
   border-radius: sz(4px);
-  padding: sz(15px) 0;
+  padding: 15px 0;
 
   &::before {
     position: absolute;
@@ -57,17 +54,17 @@
   margin: 0;
   padding: 0;
   border: none;
-  padding-bottom: sz(27px);
+  padding-bottom: 27px;
   width: 100%;
 
   &--short {
-    padding-bottom: sz(21px);
+    padding-bottom: 21px;
   }
 }
 
 .filter__price-value {
   width: 100%;
-  padding: 0 sz(10px);
+  padding: 0 10px;
   border: none;
   font-family: $ff-default;
   font-size: 16px;
@@ -105,7 +102,7 @@
 
 .filter__gender-button {
   position: relative;
-  padding-left: sz(35px);
+  padding-left: 35px;
   font-family: $ff-default;
   font-size: 16px;
   line-height: 16px;
@@ -138,9 +135,7 @@
 
 .filter__gender-label {
   position: relative;
-  top: sz(5px);
-  font-size: sz(16px);
-  line-height: sz(16px);
+  top: 5px;
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
@@ -149,18 +144,18 @@
     content: "";
     display: inline-block;
     position: absolute;
-    left: sz(-38px);
-    top: 0;
-    width: sz(24px);
-    height: sz(24px);
+    left: -34px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
     border-radius: sz(4px);
     border: sz(1px) solid $color-cameo;
   }
 
   &::after {
     position: absolute;
-    top: sz(5px);
-    left: sz(-32px);
+    top: 3px;
+    left: -27px;
     color: $color-cameo;
   }
 }
@@ -196,7 +191,7 @@
 }
 
 .filter__size-number {
-  padding: sz(19px) sz(20px) sz(13px);
+  padding: 19px 20px 13px;
   cursor: pointer;
 
   @include hover-focus {
@@ -209,11 +204,11 @@
 }
 
 .filter__button {
-  margin-bottom: sz(20px);
+  margin-bottom: 20px;
 
   &--submit {
     width: 100%;
-    padding: sz(21px) 0 sz(22px);
+    padding: 21px 0 22px;
     background-color: $color-river-bed;
     color: $color-default-white;
     border-radius: sz(4px);
