@@ -1,8 +1,14 @@
 .instagram {
-  padding: 0 60px 0 0;
+  padding: 0 sz(60px) 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    padding: 0 sz(60px);
+    justify-content: center;
+  }
 }
 
 .instagram-title {
@@ -20,6 +26,11 @@
   grid-column-gap: sz(18px);
   grid-row-gap: sz(13px);
   grid-auto-flow: row;
+
+  @include tablet {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .instagram__item {

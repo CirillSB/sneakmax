@@ -11,6 +11,13 @@
     "title map"
     "address map"
     "socials map";
+
+  @include tablet {
+    grid-template-areas:
+    "title title"
+    "address map"
+    "socials socials";
+  }
 }
 
 .contacts__title {

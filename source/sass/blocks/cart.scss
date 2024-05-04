@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.cart__desc {
+  @include tablet {
+    display: none;
+  }
+}
+
 .cart__field {
   margin-left: 10px;
   width: 20px;

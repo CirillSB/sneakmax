@@ -5,4 +5,8 @@
   font-size: 36px;
   line-height: 50px;
   color: $color-default-white;
+
+  @include tablet {
+    margin: 0 23% 21px 0;
+  }
 }
