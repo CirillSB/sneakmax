@@ -1,5 +1,15 @@
+.assortment-card {
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .assortment-card__image {
   margin-bottom: 10px;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .assortment-card__title {

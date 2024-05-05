@@ -11,4 +11,17 @@
     grid-template-rows: repeat(3, auto);
     gap: sz-t(20px);
   }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.assortment-list__item {
+    @include mobile {
+    width: 100%;
+  }
 }

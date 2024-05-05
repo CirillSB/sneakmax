@@ -9,11 +9,21 @@
     padding: 0 sz(60px);
     justify-content: center;
   }
+
+  @include mobile {
+    width: 100%;
+    padding: 25px sz(60px);
+    justify-content: center;
+  }
 }
 
 .instagram-title {
   text-align: center;
   margin: -12px 10px 16px 0;
+
+  @include mobile {
+    margin: 0;
+  }
 }
 
 .instagram__list {
@@ -31,12 +41,23 @@
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
+
+  @include mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .instagram__item {
   &:nth-child(5n-3) {
     grid-row: span 2;
   }
+  @include mobile {
+      width: 100%;
+    }
 }
 
 .instagram__photo {

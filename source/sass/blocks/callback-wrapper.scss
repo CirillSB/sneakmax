@@ -3,4 +3,11 @@
   justify-content: space-between;
   align-items: stretch;
   padding: 73px 0 82px;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 0;
+  }
 }

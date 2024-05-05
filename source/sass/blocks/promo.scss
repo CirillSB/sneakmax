@@ -24,4 +24,9 @@
   line-height: 16px;
   color: $color-default-white;
   background-color: $color-carnation;
+
+  @include mobile {
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +9,12 @@
   &--footer {
     padding: 28px 0 20px;
     border-bottom: none;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }
 
@@ -27,6 +34,26 @@
   padding: 0 8px 0 0;
   list-style-type: none;
   flex-wrap: wrap;
+
+  &--mobile {
+    @include mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 5s ease 0s;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 5s ease 0s;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .navigation__item {
@@ -36,11 +63,19 @@
     @include tablet {
       margin-right: sz(20px);
     }
+
+
   }
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--mobile {
+    @include mobile {
+      margin: 0 0 20px 0;
+    }
+  }
 }
 
 .navigation__link {

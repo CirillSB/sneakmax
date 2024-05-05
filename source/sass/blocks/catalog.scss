@@ -7,10 +7,23 @@
   grid-template-columns: 280px 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: sz(20px);
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .catalog__filter-wrapper {
   padding: 20px;
+
+  @include mobile {
+    margin-bottom: 40px;
+    padding: sz-m(40px);
+    width: 100%;
+  }
 }
 
 .catalog__assortment-wrapper {
@@ -18,10 +31,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .catalog__assortment {
   margin: 0 0 40px 0;
+
+  @include mobile {
+    width: 100%;
+  }
+  
 }
 
 .catalog__button-wrapper {

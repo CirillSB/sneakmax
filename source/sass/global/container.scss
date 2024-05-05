@@ -22,6 +22,7 @@
 }
 
   @include mobile {
-    width: calc(300 / 320 * 100%);
+    width: calc(280 / 320 * 100%);
+    // width: 300px;
   }
 }
