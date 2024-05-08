@@ -502,8 +502,7 @@ button,
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .scroll-lock-ios {
@@ -1013,8 +1012,7 @@ button,
   white-space: nowrap;
   border: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 .custom-select__button {
   display: -webkit-box;
@@ -1127,8 +1125,7 @@ button,
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
-          clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
+  clip-path: polygon(100% 0, 100% 20%, 50% 100%, 0 20%, 0 0, 50% 80%);
 }
 .custom-select.is-disabled {
   pointer-events: none;
@@ -1979,6 +1976,11 @@ button,
   background: url("../img/svg/about.svg") 0 0/28.5% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#484283));
   background: url("../img/svg/about.svg") 0 0/28.5% no-repeat, linear-gradient(#484283);
 }
+@media (max-width: 767px) {
+  .about-us {
+    padding: 25px 0;
+  }
+}
 
 .about-us__inner {
   display: -webkit-box;
@@ -1991,10 +1993,23 @@ button,
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+@media (max-width: 767px) {
+  .about-us__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .about-us__picture {
-  -webkit-clip-path: polygon(26.5% 0, 100% 0, 73.5% 100%, 0 100%);
-          clip-path: polygon(26.5% 0, 100% 0, 73.5% 100%, 0 100%);
+  clip-path: polygon(26.5% 0, 100% 0, 73.5% 100%, 0 100%);
 }
 @media (max-width: 1199px) {
   .about-us__picture {
@@ -2010,6 +2025,11 @@ button,
             align-items: center;
   }
 }
+@media (max-width: 767px) {
+  .about-us__picture {
+    width: 100%;
+  }
+}
 
 .about-us__promo {
   width: 38%;
@@ -2019,6 +2039,12 @@ button,
   .about-us__promo {
     min-width: auto;
     padding: 1.9230769231vw 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-us__promo {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -2056,6 +2082,11 @@ button,
   width: 1.4583333333vw;
   height: 0.0520833333vw;
   border: 0.0520833333vw solid #ffffff;
+}
+@media (max-width: 767px) {
+  .about-us__quote-author::before {
+    right: 100px;
+  }
 }
 
 .perfect-pair {
