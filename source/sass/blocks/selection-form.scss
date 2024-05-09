@@ -71,10 +71,11 @@
 
 .selection-form__label {
   position: relative;
-  padding-left: sz-m(36px);
+  padding-left: 36px;
   font-family: $ff-intro;
 
   @include mobile {
+    padding-left: sz-m(36px);
     font-size: sz-m(16px);
   }
 
@@ -85,10 +86,15 @@
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: sz-m(24px);
-    height: sz-m(24px);
+    width: 24px;
+    height: 24px;
     border-radius: sz(4px);
     border: sz(1px) solid $color-cameo;
+
+    @include mobile {
+      width: sz-m(24px);
+      height: sz-m(24px);
+    }
   }
 
   &::after {
@@ -134,7 +140,9 @@
 }
 
 .selection-form__size-item {
-  margin-bottom: sz-m(25px);
+  @include mobile {
+    margin-bottom: sz-m(35px);
+  }
 }
 
 .selection-form__size-label {

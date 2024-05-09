@@ -2213,11 +2213,12 @@ button,
 
 .selection-form__label {
   position: relative;
-  padding-left: 9.6vw;
+  padding-left: 36px;
   font-family: "Intro", "Arial", sans-serif;
 }
 @media (max-width: 767px) {
   .selection-form__label {
+    padding-left: 9.6vw;
     font-size: 4.2666666667vw;
   }
 }
@@ -2230,10 +2231,16 @@ button,
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   display: inline-block;
-  width: 6.4vw;
-  height: 6.4vw;
+  width: 24px;
+  height: 24px;
   border-radius: 0.2083333333vw;
   border: 0.0520833333vw solid #dbbba9;
+}
+@media (max-width: 767px) {
+  .selection-form__label::before {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
 }
 .selection-form__label::after {
   position: absolute;
@@ -2283,8 +2290,10 @@ button,
   }
 }
 
-.selection-form__size-item {
-  margin-bottom: 6.6666666667vw;
+@media (max-width: 767px) {
+  .selection-form__size-item {
+    margin-bottom: 9.3333333333vw;
+  }
 }
 
 .selection-form__size-label {
