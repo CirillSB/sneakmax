@@ -5,9 +5,10 @@
 .perfect-pair__inner {
   padding: 40px 100px;
   background-color: $color-seashell-peach;
-    @include mobile {
-  padding: sz-m(15px) sz-m(5px);
-    
+
+  @include mobile {
+    padding: sz-m(15px) sz-m(5px);
+
   }
 }
 

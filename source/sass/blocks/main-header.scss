@@ -5,7 +5,6 @@
   z-index: 100;
 
   @include mobile {
-    // position: absolute;
-
+    position: static;
   }
 }

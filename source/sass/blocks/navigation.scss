@@ -24,6 +24,10 @@
   font-size: 30px;
   line-height: 26px;
   color: $color-default-white;
+
+  &--footer {
+    margin-bottom: 30px;
+  }
 }
 
 .navigation__list {
@@ -37,9 +41,6 @@
 
   &--mobile {
     @include mobile {
-      position: absolute;
-      top: 0;
-      right: 0;
       transition: all 5s ease 0s;
       flex-direction: column;
       padding: 0;
@@ -53,6 +54,10 @@
     transition: all 5s ease 0s;
     flex-direction: column;
     padding: 0;
+
+    @include mobile {
+      position: static;
+    }
   }
 }
 
@@ -64,7 +69,9 @@
       margin-right: sz(20px);
     }
 
-
+    @include mobile {
+      margin-right: 0;
+    }
   }
 
   display: flex;
@@ -73,7 +80,12 @@
 
   &--mobile {
     @include mobile {
-      margin: 0 0 20px 0;
+      margin: 0 0 30px 0;
+      width: 100%;
+
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 }
@@ -101,5 +113,12 @@
       border: none;
       outline: none;
     }
+  }
+
+  @include mobile {
+    font-size: sz-m(14px);
+    line-height: sz-m(14px);
+    padding: 20px;
+    width: 100%;
   }
 }

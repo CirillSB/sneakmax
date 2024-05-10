@@ -24,19 +24,11 @@
   }
 
   @include mobile {
-    // grid-template-columns: 1fr;
-    // grid-template-rows: repeat(4, auto);
-    // grid-template-areas:
-    //   "title"
-    //   "address"
-    //   "socials"
-    //   "map";
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
-
 }
 
 .contacts__title {
@@ -47,7 +39,6 @@
 .contacts__address {
   grid-area: address;
   margin-bottom: 20px;
-
 }
 
 .contacts__socials {

@@ -25,8 +25,8 @@ import {
 import {
   setMaskTel
 } from './modules/mask-tel/set-mask-tel';
-import { 
-  initDynamicAdaptive 
+import {
+  initDynamicAdaptive
 } from './modules/dynamic-adaptive/init-dynamic-adaptive';
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {

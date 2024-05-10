@@ -9,7 +9,6 @@
 }
 
 .tooltip__button {
-  display: inline-block;
   display: block;
   width: 20px;
   height: 20px;
@@ -53,7 +52,6 @@
 
   @include mobile {
     left: -588%;
-    width: 100vw;
     width: sz-m(320px);
     padding: sz-m(5px);
   }

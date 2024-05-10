@@ -307,10 +307,10 @@
   background-color: transparent;
 }
 
-.selection-form__checkbox:checked+.selection-form__label::after {
+.selection-form__checkbox:checked + .selection-form__label::after {
   content: "\2713";
 }
 
-.selection-form__size-select:checked+.selection-form__size-label::after {
+.selection-form__size-select:checked + .selection-form__size-label::after {
   content: "\2713";
 }

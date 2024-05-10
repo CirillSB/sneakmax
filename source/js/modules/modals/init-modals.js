@@ -2,17 +2,6 @@ import {Modals} from './modals';
 
 let modals;
 
-// Здесь реализован пример открытия модалки через колбэк закрытия
-// const openModalInCloseCallback = (name, context = this) => {
-//   context._enableScrolling = false;
-//   context._setSettings('default');
-//   modals.open(name);
-// };
-
-// closeCallback() {
-//   openModalInCloseCallback('modal-5');
-// },
-
 const settings = {
   'default': {
     preventDefault: true,
@@ -20,19 +9,28 @@ const settings = {
     lockFocus: true,
     startFocus: true,
     focusBack: true,
+    resetScrollPos: false,
     eventTimeout: 400,
     openCallback: false,
     closeCallback: false,
+  },
+  // modal-1, modal-6 добавлен исключительно для примера при добавлении на проект ключ и обект записанный в нём нужно удалить
+  'modal-1': {
+    openCallback: () => console.log('Я отработаю при открытии modal-1'),
+    closeCallback: () => console.log('Я отработаю при закрытии modal-1'),
   },
 };
 
 const initModals = () => {
   const modalElements = document.querySelectorAll('.modal');
-  modalElements.forEach((el) => {
-    setTimeout(() => {
-      el.classList.remove('modal--preload');
-    }, 100);
-  });
+  if (modalElements.length) {
+    modalElements.forEach((el) => {
+      setTimeout(() => {
+        el.classList.remove('modal--preload');
+      }, 100);
+    });
+  }
+
   modals = new Modals(settings);
   // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
   window.modals = modals;

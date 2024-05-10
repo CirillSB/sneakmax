@@ -21,7 +21,7 @@
 }
 
 .assortment-list__item {
-    @include mobile {
+  @include mobile {
     width: 100%;
   }
 }

@@ -1,12 +1,13 @@
-import {ScrollLock} from '../../utils/scroll-lock';
-import {FocusLock} from '../../utils/focus-lock';
+import scrollLock from './scroll-lock';
+import {FocusLock} from './focus-lock';
 
 export class Modals {
   constructor(settings = {}) {
-    this._scrollLock = new ScrollLock();
+    this._scrollLock = scrollLock;
     this._focusLock = new FocusLock();
 
     this._modalOpenElements = document.querySelectorAll('[data-open-modal]');
+    this._stackModalElements = [];
     this._openedModalElement = null;
     this._modalName = null;
     this._enableScrolling = true;
@@ -19,6 +20,7 @@ export class Modals {
     this._startFocus = this._settings[this._settingKey].startFocus;
     this._focusBack = this._settings[this._settingKey].focusBack;
     this._eventTimeout = this._settings[this._settingKey].eventTimeout;
+    this._resetScrollPos = this._settings[this._settingKey].resetScrollPos;
     this._openCallback = this._settings[this._settingKey].openCallback;
     this._closeCallback = this._settings[this._settingKey].closeCallback;
 
@@ -60,6 +62,10 @@ export class Modals {
       typeof this._settings[settingKey].lockFocus === 'boolean'
         ? this._settings[settingKey].focusBack
         : this._settings[this._settingKey].focusBack;
+    this._resetScrollPos =
+      typeof this._settings[settingKey].resetScrollPos === 'boolean'
+        ? this._settings[settingKey].resetScrollPos
+        : this._settings[this._settingKey].resetScrollPos;
     this._eventTimeout =
       typeof this._settings[settingKey].eventTimeout === 'number'
         ? this._settings[settingKey].eventTimeout
@@ -102,7 +108,12 @@ export class Modals {
       return;
     }
 
-    this.close(target.closest('[data-modal]').dataset.modal);
+    if (target.closest('[data-close-modal="back"]')) {
+      this.back();
+    } else {
+      this.close(target.closest('[data-modal]').dataset.modal);
+      this._stackModalElements = [];
+    }
   }
 
   _addListeners(modal) {
@@ -145,6 +156,8 @@ export class Modals {
     this._openedModalElement = document.querySelector('.modal.is-active');
 
     if (this._openedModalElement) {
+      this._scrollLock.enablePageScroll(this._openedModalElement);
+      this._scrollLock.disablePageScroll(modal);
       this._enableScrolling = false;
       this.close(this._openedModalElement.dataset.modal);
     }
@@ -152,8 +165,12 @@ export class Modals {
     this._setSettings(modalName);
     modal.classList.add('is-active');
 
+    if (modalName !== this._stackModalElements[this._stackModalElements.length - 1]) {
+      this._stackModalElements.push(modalName);
+    }
+
     if (!this._openedModalElement) {
-      this._scrollLock.disableScrolling();
+      this._scrollLock.disablePageScroll(modal);
     }
 
     if (this._openCallback) {
@@ -164,11 +181,35 @@ export class Modals {
       this._focusLock.lock('.modal.is-active', this._startFocus);
     }
 
+    if (this._resetScrollPos) {
+      modal.scrollTo(0, 0);
+    }
+
     setTimeout(() => {
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
     }, this._eventTimeout);
+  }
+
+  back() {
+    if (!this._stackModalElements.length) {
+      return;
+    }
+
+    const activeModal = this._stackModalElements[this._stackModalElements.length - 1];
+    const prevModal = this._stackModalElements[this._stackModalElements.length - 2];
+
+    if (this._stackModalElements.length === 1) {
+      this._stackModalElements = [];
+    }
+
+    if (prevModal) {
+      this._stackModalElements.pop();
+      this.open(prevModal);
+    }
+
+    this.close(activeModal);
   }
 
   close(modalName = this._modalName) {
@@ -193,7 +234,7 @@ export class Modals {
 
     if (this._enableScrolling) {
       setTimeout(() => {
-        this._scrollLock.enableScrolling();
+        this._scrollLock.enablePageScroll(modal);
       }, this._eventTimeout);
     }
 

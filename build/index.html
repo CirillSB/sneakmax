@@ -15,11 +15,11 @@
   <div class="wrapper">
     <header class="main-header">
       <div class="container">
-        <nav class="navigation">
+        <nav class="navigation navigation--main">
           <a class="navigation__logo" href="#">
             SneakMax
           </a>
-          <ul class="navigation__list navigation__list--mobile">
+          <ul class="navigation__list navigation__list--mobile" data-da="[data-mobile-menu-content], 767, last">
             <li class="navigation__item navigation__item--mobile">
               <a class="navigation__link" href="#">
                 Каталог
@@ -62,10 +62,13 @@
               </a>
             </li>
           </ul>
-          <button class="menu-button visually-hidden">
+          <button class="menu-button" type="button" data-open-modal="mobile-menu">
             <span class="visually-hidden">
-              Кнопка показать или скрыть меню
+              Кнопка открытия и закрытия навигации
             </span>
+            <svg width="40" height="40">
+              <use xlink:href="img/sprite.svg#burger"></use>
+            </svg>
           </button>
         </nav>
       </div>
@@ -940,7 +943,7 @@
     <footer class="main-footer">
       <div class="container">
         <nav class="navigation navigation--footer">
-          <a class="navigation__logo" href="#">
+          <a class="navigation__logo navigation__logo--footer" href="#">
             SneakMax
           </a>
           <ul class="navigation__list">
@@ -980,6 +983,19 @@
     </footer>
   </div>
   <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="mobile-menu">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content" data-mobile-menu-content>
+        <!-- <p class="modal__description">Обычная модалка</p> -->
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>

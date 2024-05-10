@@ -55,9 +55,10 @@
   &:nth-child(5n-3) {
     grid-row: span 2;
   }
+
   @include mobile {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 .instagram__photo {

@@ -1,0 +1,10 @@
+.menu-button {
+  display: none;
+
+  @include mobile {
+    display: inline-block;
+    right: sz-m(30px);
+    border: none;
+    background-color: transparent;
+  }
+}
