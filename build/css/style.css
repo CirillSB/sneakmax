@@ -2720,11 +2720,19 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__inner {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: (auto)[4];
-    grid-template-rows: repeat(4, auto);
-        grid-template-areas: "title" "address" "socials" "map";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -2750,7 +2758,7 @@ button,
 @media (max-width: 767px) {
   .contacts__socials {
     width: 100%;
-    margin-bottom: 25px;
+    margin: 0 0 6.6666666667vw 0;
   }
 }
 
@@ -2782,31 +2790,9 @@ button,
     -ms-grid-column: 2;
   }
 }
-
-@media (max-width: 767px){
-  .contacts__title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-  .contacts__address {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .contacts__socials {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-  .contacts__map {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-  }
-}
 @media (max-width: 767px) {
   .contacts__map {
-    height: 300px;
+    height: 80vw;
   }
 }
 
@@ -2862,8 +2848,6 @@ button,
 @media (max-width: 767px) {
   .tooltip {
     left: 35%;
-    width: 100%;
-    display: inline-block;
   }
 }
 
@@ -2879,6 +2863,15 @@ button,
   -webkit-box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
   cursor: pointer;
+}
+.tooltip__button:hover::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 0;
+  border: 9px solid transparent;
+  border-top: 9px solid #ffffff;
+  pointer-events: none;
 }
 
 .tooltip__text {
@@ -2902,22 +2895,10 @@ button,
 }
 @media (max-width: 767px) {
   .tooltip__text {
-    left: -35%;
-    width: 100%;
-  }
-}
-.tooltip__text::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 4%;
-  border: 9px solid transparent;
-  border-top: 9px solid #ffffff;
-  pointer-events: none;
-}
-@media (max-width: 767px) {
-  .tooltip__text::before {
-    left: 35%;
+    left: -588%;
+    width: 100vw;
+    width: 85.3333333333vw;
+    padding: 1.3333333333vw;
   }
 }
 
@@ -2932,7 +2913,7 @@ button,
 }
 @media (max-width: 767px) {
   .map {
-    width: 100vw;
+    height: 80vw;
     grid-area: none;
   }
 }

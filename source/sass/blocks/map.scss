@@ -11,7 +11,8 @@
   // }
 
   @include mobile {
-    width: 100vw;
+    // width: 100vw;
+    height: sz-m(300px);
     grid-area: none;
   }
 }
