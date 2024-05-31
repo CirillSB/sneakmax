@@ -2,52 +2,21 @@
   background:
     url("../img/svg/about.svg") 0 0 / 28.5% no-repeat,
     linear-gradient($color-east-bay);
-
-  @include mobile {
-    padding: 25px 0;
-  }
 }
 
 .about-us__inner {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-
-  @include mobile {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
 }
 
 .about-us__picture {
   clip-path: polygon(26.5% 0, 100% 0, 73.5% 100%, 0 100%);
-
-  @include tablet {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
 }
 
 .about-us__promo {
   width: 38%;
   padding: 218px 0 0 5px;
-
-  @include tablet {
-    min-width: auto;
-    padding: sz-t(15px) 0 0 0;
-  }
-
-  @include mobile {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 .about-us__title {
@@ -82,9 +51,5 @@
     width: sz(28px);
     height: sz(1px);
     border: sz(1px) solid $color-default-white;
-
-    @include mobile {
-      right: 100px;
-    }
   }
 }

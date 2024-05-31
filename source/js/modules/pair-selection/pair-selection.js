@@ -34,10 +34,6 @@ export const choosePair = () => {
       }
     }
   };
-  //   submitButton.addEventListener('click', function(event) {
-  //  event.preventDefault();
-  //  console.log('Кнопка не работает!');
-  // });
   slideButton.addEventListener('pointerdown', makeStep);
   submitButton.addEventListener('pointerdown', showMessage);
 };

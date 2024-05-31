@@ -20,13 +20,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .team__item {
@@ -34,14 +27,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  @include mobile {
-    margin-bottom: 25px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 
 .team__image {

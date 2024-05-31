@@ -9,10 +9,6 @@
   width: 32.2%;
   flex-shrink: 0;
 
-  @include mobile {
-    width: 100%;
-  }
-
   h2 {
     margin-bottom: 20px;
   }
@@ -29,11 +25,6 @@
     margin-bottom: 7px;
     padding: 0;
     border: none;
-
-    @include mobile {
-      margin-bottom: 27px;
-      width: 100%;
-    }
   }
 
   input {
@@ -50,10 +41,6 @@
 
     &::placeholder {
       color: $color-bombay;
-    }
-
-    @include mobile {
-      width: 100%;
     }
   }
 

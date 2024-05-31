@@ -14,11 +14,6 @@
   margin: 0 auto;
   padding: 0;
   width: 75%;
-
-  @include mobile {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 .questions__item {
@@ -61,10 +56,6 @@
   padding: 0 0 sz(21px) 0;
   color: $color-mine-shaft;
   opacity: 0.5;
-
-  @include tablet {
-    line-height: 120%;
-  }
 }
 
 .questions__details[open] {

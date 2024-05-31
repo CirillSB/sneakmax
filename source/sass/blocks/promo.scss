@@ -6,10 +6,6 @@
   background-repeat: no-repeat;
   background-position: 54% 66%;
   background-size: sz(954px);
-
-  @include mobile {
-    padding: 20px 0 60px;
-  }
 }
 
 .promo__description {
@@ -28,9 +24,4 @@
   line-height: 16px;
   color: $color-default-white;
   background-color: $color-carnation;
-
-  @include mobile {
-    width: 100%;
-    text-align: center;
-  }
 }

@@ -5,23 +5,4 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: sz(20px);
-
-  @include tablet {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: sz-t(20px);
-  }
-
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-.assortment-list__item {
-  @include mobile {
-    width: 100%;
-  }
 }

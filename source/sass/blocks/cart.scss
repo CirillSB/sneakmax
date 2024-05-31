@@ -3,16 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @include mobile {
-    display: none;
-  }
-}
-
-.cart__desc {
-  @include tablet {
-    display: none;
-  }
 }
 
 .cart__field {

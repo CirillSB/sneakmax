@@ -2,10 +2,6 @@
   position: absolute;
   left: 28%;
   top: 0;
-
-  @include mobile {
-    left: 35%;
-  }
 }
 
 .tooltip__button {
@@ -45,16 +41,6 @@
   padding: 10px 16px;
   border-radius: sz(4px);
   z-index: 100;
-
-  @include tablet {
-    line-height: 120%;
-  }
-
-  @include mobile {
-    left: -588%;
-    width: sz-m(320px);
-    padding: sz-m(5px);
-  }
 }
 
 .tooltip__button:hover + .tooltip__text {

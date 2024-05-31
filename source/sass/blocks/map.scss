@@ -2,21 +2,4 @@
   width: 100%;
   height: 100%;
   background-color: $color-cameo;
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-
-  // @include vp-1023 {
-  //   height: 335px;
-  // }
-
-  @include mobile {
-    // width: 100vw;
-    height: sz-m(300px);
-    grid-area: none;
-  }
 }
-
-// .map.lazy {
-//   background-image: none;
-// }

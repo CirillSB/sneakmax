@@ -1,10 +1,6 @@
 .contacts {
   background-color: $color-porcelain;
   padding: 57px 0 85px;
-
-  @include mobile {
-    padding-bottom: 35px;
-  }
 }
 
 .contacts__inner {
@@ -15,20 +11,6 @@
     "title map"
     "address map"
     "socials map";
-
-  @include tablet {
-    grid-template-areas:
-      "title title"
-      "address map"
-      "socials socials";
-  }
-
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
 }
 
 .contacts__title {
@@ -43,20 +25,8 @@
 
 .contacts__socials {
   grid-area: socials;
-
-  @include mobile {
-    // grid-area: none;
-    width: 100%;
-    margin: 0 0 sz-m(25px) 0;
-  }
 }
 
 .contacts__map {
   grid-area: map;
-
-  @include mobile {
-    // grid-area: none;
-    // width: sz-m(280px);
-    height: sz-m(300px);
-  }
 }
