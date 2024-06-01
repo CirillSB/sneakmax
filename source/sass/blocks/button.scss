@@ -9,7 +9,8 @@
   @include hover {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        box-shadow: 0 0 sz(10px) $color-carnation;
+        // box-shadow: 0 0 sz(10px) $color-carnation;
+        background-color: $color-mojo;
       }
     }
   }

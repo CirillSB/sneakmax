@@ -16,9 +16,11 @@
     <header class="main-header">
       <div class="container">
         <nav class="navigation navigation--main">
-          <a class="navigation__logo" href="#">
-            SneakMax
-          </a>
+          <div class="navigation__logo-wrapper">
+            <a class="navigation__logo" href="#">
+              SneakMax
+            </a>
+          </div>
           <ul class="navigation__list" data-da="[data-mobile-menu-content], 767, last">
             <li class="navigation__item">
               <a class="navigation__link" href="#">
@@ -51,25 +53,19 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link cart" href="#">
+              <a class="navigation__link" href="#">
                 <span class="cart__desc">
                   Корзина
                 </span>
-                <svg class="cart__field" width="20" height="19">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-                <span class="cart__contents visually-hidden"></span>
               </a>
             </li>
           </ul>
-          <button class="menu-button" type="button" data-open-modal="mobile-menu">
-            <span class="visually-hidden">
-              Кнопка открытия и закрытия навигации
-            </span>
-            <svg width="40" height="40">
-              <use xlink:href="img/sprite.svg#burger"></use>
+          <div class="cart">
+            <svg class="cart__field" width="20" height="19">
+              <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
-          </button>
+            <span class="cart__contents visually-hidden"></span>
+          </div>
         </nav>
       </div>
     </header>
@@ -82,7 +78,7 @@
           <p class="promo__description">
             Мы&nbsp;продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и&nbsp;многие другие по&nbsp;низким ценам
           </p>
-          <a class="promo__link" href="#">
+          <a class="button promo__link" href="#">
             Перейти к&nbsp;покупкам
           </a>
         </div>
@@ -205,7 +201,7 @@
                         <source type="image/webp" media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.webp 1x, img/sneakers-desktop@2x.webp 2x">
                         <source type="image/webp" srcset="img/sneakers-mobile@1x.webp 1x, img/sneakers-mobile@2x.webp 2x">
                         <source media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.png 1x, img/sneakers-desktop@2x.png 2x">
-                        <img class="assortment-card__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/sneakers-mobile@1x.png" srcset="img/sneakers-mobile@2x.png 2x" width="280" height="293" alt="Кроссовки.">
+                        <img class="assortment-card__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/sneakers-mobile@1x.png" srcset="img/sneakers-mobile@2x.png 2x" width="280" height="293" alt="Кроссовки.">
                       </picture>
                       <noscript>
                         <img src="img/sneakers-mobile@1x.png" width="280" height="293" alt="Кроссовки.">

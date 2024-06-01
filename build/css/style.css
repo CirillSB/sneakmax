@@ -1218,6 +1218,21 @@ button,
   border-bottom: none;
 }
 
+.navigation__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .navigation__logo {
   font-family: "Intro", "Arial", sans-serif;
   font-weight: 700;
@@ -1240,7 +1255,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 0 8px 0 0;
+  padding: 0;
   list-style-type: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1745,8 +1760,7 @@ button,
 }
 @media (hover: hover) and (hover: hover) {
   .button:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: 0 0 0.5208333333vw #f14f4f;
-            box-shadow: 0 0 0.5208333333vw #f14f4f;
+    background-color: #cc4949;
   }
 }
 .button.focus-visible:focus.focus-visible:focus {
