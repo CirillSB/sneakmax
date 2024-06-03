@@ -1511,7 +1511,6 @@ button,
   border-left: 0.0520833333vw solid #b2b5bb;
   border-right: 0.0520833333vw solid #b2b5bb;
   border-radius: 0.2083333333vw;
-  padding: 15px 0;
 }
 .filter__price-wrapper::before {
   position: absolute;
@@ -1544,7 +1543,7 @@ button,
 
 .filter__price-value {
   width: 100%;
-  padding: 0 10px;
+  padding: 15px 10px;
   border: none;
   font-family: "Intro-Book", "Arial", sans-serif;
   font-size: 16px;
@@ -1596,31 +1595,6 @@ button,
   border: none;
 }
 
-.filter__gender-button:focus + .filter__gender-label {
-  -webkit-box-shadow: 0 0 0.2604166667vw #444b58;
-          box-shadow: 0 0 0.2604166667vw #444b58;
-}
-
-.filter__gender-button.focus-visible + .filter__gender-label {
-  -webkit-box-shadow: 0 0 0.2604166667vw #444b58;
-          box-shadow: 0 0 0.2604166667vw #444b58;
-}
-
-.filter__gender-button.focus-visible:active + .filter__gender-label {
-  -webkit-box-shadow: 0 0 0.78125vw #444b58;
-          box-shadow: 0 0 0.78125vw #444b58;
-}
-
-.filter__gender-button.focus-visible + .filter__gender-label {
-  -webkit-box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 0.5208333333vw rgba(255, 255, 255, 0.5);
-}
-
-.filter__gender-button.focus-visible:active + .filter__gender-label {
-  -webkit-box-shadow: 0 0 0.2604166667vw rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 0.2604166667vw rgba(255, 255, 255, 0.5);
-}
-
 .filter__gender-label {
   position: relative;
   top: 5px;
@@ -1642,7 +1616,7 @@ button,
 .filter__gender-label::after {
   position: absolute;
   top: 3px;
-  left: -27px;
+  left: -29px;
   color: #dbbba9;
 }
 
@@ -1652,13 +1626,13 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
   -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
-  gap: 0.1041666667vw;
-  border: 0.1041666667vw solid #dbbba9;
-  border-radius: 0.0520833333vw 0.0520833333vw 0 0;
+  gap: 2px;
+  border: 2px solid #dbbba9;
+  border-radius: 1px 1px 0 0;
   background-color: #dbbba9;
 }
 
@@ -1674,32 +1648,27 @@ button,
           align-items: center;
   background-color: #fff4ee;
 }
+.filter__size-item:hover {
+  background-color: #dbbba9;
+}
 
 .filter__size-checkbox {
   position: relative;
 }
 .filter__size-checkbox.focus-visible:focus + .filter__size-number {
-  border-radius: 25%;
-  -webkit-box-shadow: inset 0 0 0.5208333333vw #444b58;
-          box-shadow: inset 0 0 0.5208333333vw #444b58;
-  opacity: 0.5;
+  background-color: #dbbba9;
 }
 
 .filter__size-number {
-  padding: 19px 20px 13px;
+  width: calc(100% + 1px);
+  padding: 19px 0 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
-}
-@media (hover: hover) and (hover: hover) {
-  .filter__size-number:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: inset 0 0 0.5208333333vw #444b58;
-            box-shadow: inset 0 0 0.5208333333vw #444b58;
-  }
-}
-@media (hover: hover) {
-  .filter__size-number.focus-visible:focus:hover:not(.focus-visible) {
-    -webkit-box-shadow: inset 0 0 0.5208333333vw #444b58;
-            box-shadow: inset 0 0 0.5208333333vw #444b58;
-  }
 }
 
 .filter__button {
@@ -1712,42 +1681,74 @@ button,
   color: #ffffff;
   border-radius: 0.2083333333vw;
 }
+@media (hover: hover) and (hover: hover) {
+  .filter__button--submit:hover:not(.focus-visible):hover:not(.focus-visible) {
+    background-color: #31343c;
+  }
+}
+@media (hover: hover) {
+  .filter__button--submit:hover:not(.focus-visible).focus-visible:focus {
+    background-color: #31343c;
+    border: 2px solid #31343c;
+  }
+}
+@media (hover: hover) {
+  .filter__button--submit.focus-visible:focus:hover:not(.focus-visible) {
+    background-color: #31343c;
+  }
+}
+.filter__button--submit.focus-visible:focus.focus-visible:focus {
+  background-color: #31343c;
+  border: 2px solid #31343c;
+}
 .filter__button--reset {
   background-color: transparent;
   color: #444b58;
   margin: 0 auto;
+  border: none;
 }
 @media (hover: hover) and (hover: hover) {
-  .filter__button:hover:not(.focus-visible):hover:not(.focus-visible) {
-    background-color: #808080;
+  .filter__button--reset:hover:not(.focus-visible):hover:not(.focus-visible) {
+    color: #cc4949;
   }
 }
 @media (hover: hover) {
-  .filter__button:hover:not(.focus-visible).focus-visible:focus {
-    -webkit-box-shadow: 0 0 0.5208333333vw #808080;
-            box-shadow: 0 0 0.5208333333vw #808080;
-    border: none;
+  .filter__button--reset:hover:not(.focus-visible).focus-visible:focus {
+    color: #cc4949;
     outline: none;
   }
 }
 @media (hover: hover) {
-  .filter__button.focus-visible:focus:hover:not(.focus-visible) {
-    background-color: #808080;
+  .filter__button--reset.focus-visible:focus:hover:not(.focus-visible) {
+    color: #cc4949;
   }
 }
-.filter__button.focus-visible:focus.focus-visible:focus {
-  -webkit-box-shadow: 0 0 0.5208333333vw #808080;
-          box-shadow: 0 0 0.5208333333vw #808080;
-  border: none;
+.filter__button--reset.focus-visible:focus.focus-visible:focus {
+  color: #cc4949;
+  outline: none;
+}
+
+.filter__price-value.focus-visible {
+  background-color: #dbbba9;
   outline: none;
 }
 
 .filter__gender-button:checked + .filter__gender-label::after {
-  content: "✓";
+  content: url("../img/svg/check.svg");
+}
+
+.filter__gender-button.focus-visible:focus + .filter__gender-label::before {
+  outline-offset: 2px;
+  outline: 2px solid #cc4949;
+}
+
+.filter__gender-button:focus + .filter__gender-label::before {
+  outline-offset: 2px;
+  outline: 2px solid #cc4949;
 }
 
 .filter__size-checkbox:checked + .filter__size-number {
-  color: #ff0000;
+  color: #cc4949;
 }
 
 .button {
@@ -1831,6 +1832,15 @@ button,
 }
 .noUi-handle::before, .noUi-handle::after {
   display: none;
+}
+.noUi-handle:focus:not(.focus-visible) {
+  background-color: #cc4949;
+  outline: none;
+}
+
+.noUi-handle.focus-visible {
+  background-color: #cc4949;
+  outline: none;
 }
 
 .noUi-horizontal .noUi-handle {
@@ -2016,10 +2026,6 @@ button,
   -webkit-box-shadow: 0 0 0.5208333333vw #242424;
           box-shadow: 0 0 0.5208333333vw #242424;
 }
-.selection-form__label.focus-visible:active.focus-visible:active {
-  background-color: red;
-}
-
 .selection-form__size-list {
   margin: 0 0 15px 0;
   padding: 0;

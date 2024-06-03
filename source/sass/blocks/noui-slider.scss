@@ -28,6 +28,16 @@
   &::after {
     display: none;
   }
+
+  &:focus:not(.focus-visible) {
+    background-color: $color-mojo;
+    outline: none;
+  }
+}
+
+.noUi-handle.focus-visible {
+  background-color: $color-mojo;
+  outline: none;
 }
 
 .noUi-horizontal .noUi-handle {
