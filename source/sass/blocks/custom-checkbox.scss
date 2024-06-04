@@ -1,0 +1,35 @@
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid $color-cameo;
+  }
+
+  &::after {
+    position: absolute;
+    color: $color-cameo;
+  }
+}
+
+.hidden-checkbox:checked + .custom-checkbox::after {
+  content: url("../img/svg/check.svg");
+}
+
+.hidden-checkbox.focus-visible:focus + .custom-checkbox::before {
+  outline-offset: 2px;
+  outline: 2px solid $color-mojo;
+}
+
+.hidden-checkbox:focus + .custom-checkbox::before {
+  outline-offset: 2px;
+  outline: 2px solid $color-mojo;
+}
+
+// .hidden-checkbox на скрытые чекбоксы

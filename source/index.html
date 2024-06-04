@@ -54,9 +54,7 @@
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">
-                <span class="cart__desc">
                   Корзина
-                </span>
               </a>
             </li>
           </ul>
@@ -114,12 +112,12 @@
                   Пол
                 </legend>
                 <div class="filter__genders-wrapper">
-                  <input class="filter__gender-button visually-hidden" id="male" type="checkbox">
-                  <label class="filter__gender-label" for="male">
+                  <input class="filter__gender-button hidden-checkbox visually-hidden" id="male" type="checkbox">
+                  <label class="filter__gender-label custom-checkbox" for="male">
                     мужской
                   </label>
-                  <input class="filter__gender-button visually-hidden" id="female" type="checkbox" checked>
-                  <label class="filter__gender-label" for="female">
+                  <input class="filter__gender-button hidden-checkbox visually-hidden" id="female" type="checkbox" checked>
+                  <label class="filter__gender-label custom-checkbox" for="female">
                     женский
                   </label>
                 </div>
@@ -196,23 +194,41 @@
               <ul class="catalog__assortment assortment-list">
                 <li class="assortment-list__item">
                   <section class="assortment-card">
-                    <a class="assortment-card__link" href="#">
-                      <picture class="assortment-card__picture">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.webp 1x, img/sneakers-desktop@2x.webp 2x">
-                        <source type="image/webp" srcset="img/sneakers-mobile@1x.webp 1x, img/sneakers-mobile@2x.webp 2x">
-                        <source media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.png 1x, img/sneakers-desktop@2x.png 2x">
-                        <img class="assortment-card__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/sneakers-mobile@1x.png" srcset="img/sneakers-mobile@2x.png 2x" width="280" height="293" alt="Кроссовки.">
-                      </picture>
-                      <noscript>
-                        <img src="img/sneakers-mobile@1x.png" width="280" height="293" alt="Кроссовки.">
-                      </noscript>
-                      <h3 class="assortment-card__title">
-                        Кроссовки Nike Air Force 1 &rsquo;07&nbsp;QS
-                      </h3>
-                      <p class="assortment-card__price">
-                        11 000 р
-                      </p>
-                    </a>
+                    <!-- <a class="assortment-card__link" href="#"> -->
+                    <picture class="assortment-card__picture">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.webp 1x, img/sneakers-desktop@2x.webp 2x">
+                      <source type="image/webp" srcset="img/sneakers-mobile@1x.webp 1x, img/sneakers-mobile@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/sneakers-desktop@1x.png 1x, img/sneakers-desktop@2x.png 2x">
+                      <img class="assortment-card__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/sneakers-mobile@1x.png" srcset="img/sneakers-mobile@2x.png 2x" width="280" height="293" alt="Кроссовки.">
+                    </picture>
+                    <noscript>
+                      <img src="img/sneakers-mobile@1x.png" width="280" height="293" alt="Кроссовки.">
+                    </noscript>
+                    <h3 class="assortment-card__title">
+                      Кроссовки Nike Air Force 1 &rsquo;07&nbsp;QS
+                    </h3>
+                    <p class="assortment-card__price">
+                      11 000 р
+                    </p>
+                    <!-- </a> -->
+                    <div class="assortment-card__buttons">
+                      <button class="assortment-card__button" type="button">
+                        <span class="visually-hidden">
+                          Кнопка показа информации о товаре
+                        </span>
+                        <svg width="30" height="30">
+                          <use xlink:href="img/sprite.svg#show"></use>
+                        </svg>
+                      </button>
+                      <button class="assortment-card__button" type="button">
+                        <span class="visually-hidden">
+                          Кнопка добавления товара в корзину
+                        </span>
+                        <svg width="30" height="30">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </section>
                 </li>
                 <!-- <li class="assortment-list__item">
@@ -443,8 +459,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-1" type="checkbox" name="sneackers adidas">
-                    <label class="selection-form__label" for="sneakers-1">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-1" type="checkbox" name="sneackers adidas">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-1">
                       кеды
                     </label>
                   </div>
@@ -460,8 +476,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-2" type="checkbox" name="sneackers abibas">
-                    <label class="selection-form__label" for="sneakers-2">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-2" type="checkbox" name="sneackers abibas">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-2">
                       кеды
                     </label>
                   </div>
@@ -477,8 +493,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-3" type="checkbox" name="sneackers reebok">
-                    <label class="selection-form__label" for="sneakers-3">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-3" type="checkbox" name="sneackers reebok">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-3">
                       кеды
                     </label>
                   </div>
@@ -494,8 +510,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-4" type="checkbox" name="sneackers nike">
-                    <label class="selection-form__label" for="sneakers-4">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-4" type="checkbox" name="sneackers nike">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-4">
                       кеды
                     </label>
                   </div>
@@ -511,8 +527,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-5" type="checkbox" name="sneackers puma">
-                    <label class="selection-form__label" for="sneakers-5">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-5" type="checkbox" name="sneackers puma">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-5">
                       кеды
                     </label>
                   </div>
@@ -528,8 +544,8 @@
                     <img src="img/sneakers-for-you-mobile@1x.png" width="280" height="120" alt="Кроссовки.">
                   </noscript>
                   <div class="selection-form__checkbox-wrapper">
-                    <input class="selection-form__checkbox visually-hidden" id="sneakers-6" type="checkbox" name="sneackers solomon">
-                    <label class="selection-form__label" for="sneakers-6">
+                    <input class="selection-form__checkbox hidden-checkbox visually-hidden" id="sneakers-6" type="checkbox" name="sneackers solomon">
+                    <label class="selection-form__label custom-checkbox" for="sneakers-6">
                       кеды
                     </label>
                   </div>
@@ -542,24 +558,24 @@
               </h3>
               <ul class="selection-form__size-list">
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select visually-hidden" id="size-less-36" type="radio" name="sizes">
-                  <label class="selection-form__size-label" for="size-less-36">менее 36</label>
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size-less-36" type="checkbox">
+                  <label class="selection-form__size-label custom-checkbox" for="size-less-36">менее 36</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select visually-hidden" id="size36-38" type="radio" name="sizes">
-                  <label class="selection-form__size-label" for="size36-38">36-38</label>
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size36-38" type="checkbox">
+                  <label class="selection-form__size-label custom-checkbox" for="size36-38">36-38</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select visually-hidden" id="size39-41" type="radio" name="sizes">
-                  <label class="selection-form__size-label" for="size39-41">39-41</label>
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size39-41" type="checkbox">
+                  <label class="selection-form__size-label custom-checkbox" for="size39-41">39-41</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select visually-hidden" id="size42-44" type="radio" name="sizes">
-                  <label class="selection-form__size-label" for="size42-44">42-44</label>
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size42-44" type="checkbox">
+                  <label class="selection-form__size-label custom-checkbox" for="size42-44">42-44</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select visually-hidden" id="size45" type="radio" name="sizes">
-                  <label class="selection-form__size-label" for="size45">45 и больше</label>
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size45" type="checkbox">
+                  <label class="selection-form__size-label custom-checkbox" for="size45">45 и больше</label>
                 </li>
               </ul>
               <picture class="perfect-pair__picture">

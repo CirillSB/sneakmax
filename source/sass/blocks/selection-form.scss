@@ -43,44 +43,17 @@
   font-family: $ff-intro;
 
   &::before {
-    content: "";
-    position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    display: inline-block;
     width: 24px;
     height: 24px;
-    border-radius: sz(4px);
-    border: sz(1px) solid $color-cameo;
   }
 
   &::after {
-    position: absolute;
-    left: 0;
-    top: 50%;
+    left: -3px;
+    top: 54%;
     transform: translate(50%, -50%);
-    display: inline-block;
-  }
-
-  @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        box-shadow: 0 0 sz(10px) $color-shadow;
-      }
-    }
-  }
-
-  @include focus {
-    &.focus-visible:focus {
-      box-shadow: 0 0 sz(10px) $color-mine-shaft;
-    }
-  }
-
-  @include active {
-    &.focus-visible:active {
-      
-    }
   }
 }
 
@@ -98,24 +71,15 @@
   padding-left: 30px;
 
   &::before {
-    content: "";
-    position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border-radius: sz(4px);
-    border: sz(1px) solid $color-cameo;
   }
 
   &::after {
-    position: absolute;
-    left: 0;
-    top: 50%;
+    left: -3px;
+    top: 54%;
     transform: translate(50%, -50%);
-    display: inline-block;
   }
 }
 
@@ -214,12 +178,4 @@
   line-height: 16px;
   color: $color-river-bed;
   background-color: transparent;
-}
-
-.selection-form__checkbox:checked + .selection-form__label::after {
-  content: "\2713";
-}
-
-.selection-form__size-select:checked + .selection-form__size-label::after {
-  content: "\2713";
 }

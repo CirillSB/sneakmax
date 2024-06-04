@@ -112,29 +112,20 @@
 }
 
 .filter__gender-label {
-  position: relative;
   top: 5px;
   font-size: 16px;
   line-height: 16px;
-  cursor: pointer;
 
   &::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
     left: -34px;
     top: -2px;
     width: 24px;
     height: 24px;
-    border-radius: sz(4px);
-    border: sz(1px) solid $color-cameo;
   }
 
   &::after {
-    position: absolute;
     top: 3px;
     left: -29px;
-    color: $color-cameo;
   }
 }
 
@@ -165,7 +156,7 @@
 .filter__size-checkbox {
   position: relative;
 
-  &.focus-visible:focus+.filter__size-number {
+  &.focus-visible:focus + .filter__size-number {
     background-color: $color-cameo;
   }
 }
@@ -228,19 +219,19 @@
   outline: none;
 }
 
-.filter__gender-button:checked + .filter__gender-label::after {
-  content: url("../img/svg/check.svg");
-}
+// .filter__gender-button:checked + .filter__gender-label::after {
+//   content: url("../img/svg/check.svg");
+// }
 
-.filter__gender-button.focus-visible:focus + .filter__gender-label::before {
-  outline-offset: 2px;
-  outline: 2px solid $color-mojo;
-}
+// .filter__gender-button.focus-visible:focus + .filter__gender-label::before {
+//   outline-offset: 2px;
+//   outline: 2px solid $color-mojo;
+// }
 
-.filter__gender-button:focus + .filter__gender-label::before {
-  outline-offset: 2px;
-  outline: 2px solid $color-mojo;
-}
+// .filter__gender-button:focus + .filter__gender-label::before {
+//   outline-offset: 2px;
+//   outline: 2px solid $color-mojo;
+// }
 
 .filter__size-checkbox:checked + .filter__size-number {
   color: $color-mojo;

@@ -11,12 +11,14 @@
     border-bottom: none;
   }
 }
+
 .navigation__logo-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
 }
+
 .navigation__logo {
   font-family: $ff-intro;
   font-weight: 700;

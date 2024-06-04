@@ -1,3 +1,7 @@
+.assortment-card {
+  position: relative;
+}
+
 .assortment-card__image {
   margin-bottom: 10px;
 }
@@ -13,4 +17,24 @@
   font-size: 20px;
   line-height: 20px;
   margin: 0;
+}
+
+.assortment-card__buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  background: $color-shadow;
+}
+
+.assortment-card__button {
+  border: none;
+  border-radius: 50%;
+  background-color: $color-river-bed;
+  padding: 25px;
 }
