@@ -1833,7 +1833,6 @@ button,
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background: rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease 0s;
 }
 
 .assortment-card__button {
@@ -2185,12 +2184,27 @@ button,
 .selection-form__slide-button {
   padding: 24px 40px 22px;
   border-radius: 0.2083333333vw;
-  border: 0.0520833333vw solid #444b58;
+  border: 1px solid #444b58;
   font-family: "Intro", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #444b58;
   background-color: transparent;
+  cursor: pointer;
+}
+@media (hover: hover) and (hover: hover) {
+  .selection-form__slide-button:hover:not(.focus-visible):hover:not(.focus-visible) {
+    border-color: #cc4949;
+    outline: none;
+  }
+}
+.selection-form__slide-button.focus-visible:focus.focus-visible:focus {
+  border-color: #cc4949;
+  outline: none;
+}
+.selection-form__slide-button.focus-visible:active.focus-visible:active {
+  -webkit-box-shadow: inset 0 0 10px #cc4949;
+          box-shadow: inset 0 0 10px #cc4949;
 }
 
 .iphone {
@@ -2314,6 +2328,8 @@ button,
 
 .questions__details {
   cursor: pointer;
+  -webkit-transition: all 3s ease 0s;
+  transition: all 3s ease 0s;
 }
 
 .questions__summary {
@@ -2324,6 +2340,8 @@ button,
   line-height: 20px;
   color: #242424;
   padding: 30px 0 21px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .questions__summary::marker {
   content: none;
@@ -2337,6 +2355,11 @@ button,
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .questions__text {
@@ -2347,9 +2370,9 @@ button,
 }
 
 .questions__details[open] .questions__plus {
-  -webkit-transform: translateY(-50%) rotate(45deg);
-      -ms-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
 }
 
 .contacts {

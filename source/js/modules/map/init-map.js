@@ -1,3 +1,4 @@
+/* eslint-disable */
 const script = document.createElement('script');
 let ok = false;
 window.addEventListener('scroll', () => {
@@ -13,61 +14,17 @@ window.addEventListener('scroll', () => {
 const initMap = () => {
   script.onload = () => {
 
-    ymaps.ready(init); /* eslint-disable-line*/
+    ymaps.ready(init);
 
     function init() {
-      ymaps.ready(function () { /* eslint-disable-line*/
-        let myMap = new ymaps.Map('map', { /* eslint-disable-line*/
+      ymaps.ready(function() {
+        let myMap = new ymaps.Map('map', {
           center: [55.75378462995323, 37.618437642084835],
           zoom: 9,
         }, {
           searchControlProvider: 'yandex#search',
         });
-
-        // Создаём макет содержимого.
-        // let MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        //     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        // );
-
-        // let myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        //   hintContent: 'Собственный значок метки',
-        //   balloonContent: 'Это красивая метка',
-        // }, {
-        //   // Опции.
-        //   // Необходимо указать данный тип макета.
-        //   iconLayout: 'default#image',
-        //   // Своё изображение иконки метки.
-        //   iconImageHref: 'img/sprite/point.svg',
-        //   // Размеры метки.
-        //   iconImageSize: [20, 28],
-        //   // Смещение левого верхнего угла иконки относительно
-        //   // её "ножки" (точки привязки).
-        //   iconImageOffset: [-5, -38],
-        // });
-
-        // let myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-        //   hintContent: 'Собственный значок метки с контентом',
-        //   balloonContent: 'А эта — новогодняя',
-        //   iconContent: '12',
-        // }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        // iconLayout: 'default#imageWithContent',
-        // Своё изображение иконки метки.
-        // iconImageHref: '',
-        // Размеры метки.
-        // iconImageSize: [48, 48],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        // iconImageOffset: [-24, -24],
-        // Смещение слоя с содержимым относительно слоя с картинкой.
-        // iconContentOffset: [15, 15],
-        // Макет содержимого.
-        // iconContentLayout: MyIconContentLayout,
-        // });
-        myMap.geoObjects; /* eslint-disable-line*/
-        // .add(myPlacemark)
-        // .add(myPlacemarkWithContent);
+        myMap.geoObjects; 
       });
     }
   };
