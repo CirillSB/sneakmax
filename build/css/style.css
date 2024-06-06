@@ -1368,6 +1368,9 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
 }
 
 .cart__field {
@@ -1405,17 +1408,6 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-}
-
-.promo__link {
-  display: inline-block;
-  padding: 22px 47px;
-  border-radius: 0.2083333333vw;
-  font-family: "Intro", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  background-color: #f14f4f;
 }
 
 .main-title {
@@ -1478,11 +1470,7 @@ button,
 }
 
 .catalog__button {
-  color: #ffffff;
-  background-color: #f14f4f;
-  border-radius: 0.2083333333vw;
   margin: 2px 0 0 -20px;
-  padding: 22px 48px;
 }
 
 .title {
@@ -1698,30 +1686,6 @@ button,
 }
 .filter__button--submit {
   width: 100%;
-  padding: 21px 0 22px;
-  background-color: #444b58;
-  color: #ffffff;
-  border-radius: 0.2083333333vw;
-}
-@media (hover: hover) and (hover: hover) {
-  .filter__button--submit:hover:not(.focus-visible):hover:not(.focus-visible) {
-    background-color: #31343c;
-  }
-}
-@media (hover: hover) {
-  .filter__button--submit:hover:not(.focus-visible).focus-visible:focus {
-    background-color: #31343c;
-    border: 2px solid #31343c;
-  }
-}
-@media (hover: hover) {
-  .filter__button--submit.focus-visible:focus:hover:not(.focus-visible) {
-    background-color: #31343c;
-  }
-}
-.filter__button--submit.focus-visible:focus.focus-visible:focus {
-  background-color: #31343c;
-  border: 2px solid #31343c;
 }
 .filter__button--reset {
   background-color: transparent;
@@ -1760,27 +1724,91 @@ button,
 }
 
 .button {
+  border: none;
+  cursor: pointer;
+}
+.button--main {
   font-family: "Intro", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  border: none;
-  cursor: pointer;
+  border-radius: 4px;
+  padding: 22px 48px;
+}
+.button--wide {
+  width: 100%;
+}
+.button--primary {
+  color: #ffffff;
+  background-color: #f14f4f;
 }
 @media (hover: hover) and (hover: hover) {
-  .button:hover:not(.focus-visible):hover:not(.focus-visible) {
+  .button--primary:hover:not(.focus-visible):hover:not(.focus-visible) {
     background-color: #cc4949;
   }
 }
-.button.focus-visible:focus.focus-visible:focus {
+.button--primary.focus-visible:focus.focus-visible:focus {
   border: none;
   outline: none;
   -webkit-box-shadow: inset 0 0 1.5625vw #ffffff;
           box-shadow: inset 0 0 1.5625vw #ffffff;
 }
-.button.focus-visible:active.focus-visible:active {
+.button--primary.focus-visible:active.focus-visible:active {
   -webkit-box-shadow: inset 0 0 0.5208333333vw #f3f6f6;
           box-shadow: inset 0 0 0.5208333333vw #f3f6f6;
+}
+.button--secondary {
+  background-color: #444b58;
+  color: #ffffff;
+}
+@media (hover: hover) and (hover: hover) {
+  .button--secondary:hover:not(.focus-visible):hover:not(.focus-visible) {
+    background-color: #31343c;
+  }
+}
+.button--secondary.focus-visible:focus.focus-visible:focus {
+  border: none;
+  background-color: #31343c;
+}
+.button--secondary.focus-visible:active.focus-visible:active {
+  background-color: #f14f4f;
+}
+@media (hover: hover) and (hover: hover) {
+  .button--secondary:hover:not(.focus-visible):hover:not(.focus-visible) {
+    background-color: #31343c;
+  }
+}
+@media (hover: hover) {
+  .button--secondary.focus-visible:focus:hover:not(.focus-visible) {
+    background-color: #31343c;
+  }
+}
+.button--form {
+  padding: 24px 40px 22px;
+  border-radius: 0.2083333333vw;
+  outline: 1px solid #444b58;
+  color: #444b58;
+  background-color: transparent;
+  font-weight: 600;
+}
+@media (hover: hover) and (hover: hover) {
+  .button--form:hover:not(.focus-visible):hover:not(.focus-visible) {
+    background-color: #31343c;
+    color: #ffffff;
+  }
+}
+@media (hover: hover) {
+  .button--form.focus-visible:focus:hover:not(.focus-visible) {
+    background-color: #31343c;
+    color: #ffffff;
+  }
+}
+.button--form.focus-visible:focus.focus-visible:focus {
+  background-color: #444b58;
+  color: #ffffff;
+}
+.button--form.focus-visible:active.focus-visible:active {
+  background-color: #f14f4f;
 }
 
 .assortment-list {
@@ -2179,32 +2207,6 @@ button,
 
 .selection-form__step-number {
   line-height: 16px;
-}
-
-.selection-form__slide-button {
-  padding: 24px 40px 22px;
-  border-radius: 0.2083333333vw;
-  border: 1px solid #444b58;
-  font-family: "Intro", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  color: #444b58;
-  background-color: transparent;
-  cursor: pointer;
-}
-@media (hover: hover) and (hover: hover) {
-  .selection-form__slide-button:hover:not(.focus-visible):hover:not(.focus-visible) {
-    border-color: #cc4949;
-    outline: none;
-  }
-}
-.selection-form__slide-button.focus-visible:focus.focus-visible:focus {
-  border-color: #cc4949;
-  outline: none;
-}
-.selection-form__slide-button.focus-visible:active.focus-visible:active {
-  -webkit-box-shadow: inset 0 0 10px #cc4949;
-          box-shadow: inset 0 0 10px #cc4949;
 }
 
 .iphone {
@@ -2627,33 +2629,6 @@ button,
 }
 .callback-form input::placeholder {
   color: #b2b5bb;
-}
-.callback-form button {
-  padding: 22px;
-  border-radius: 0.2083333333vw;
-  border: none;
-  width: 98%;
-  background-color: #f14f4f;
-  color: #ffffff;
-  font-family: "Intro", "Arial", sans-serif;
-  line-height: 16px;
-  cursor: pointer;
-}
-@media (hover: hover) and (hover: hover) {
-  .callback-form button:hover:not(.focus-visible):hover:not(.focus-visible) {
-    -webkit-box-shadow: 0 0 0.5208333333vw #f14f4f;
-            box-shadow: 0 0 0.5208333333vw #f14f4f;
-  }
-}
-.callback-form button.focus-visible:focus.focus-visible:focus {
-  border: none;
-  outline: none;
-  -webkit-box-shadow: inset 0 0 1.5625vw #ffffff;
-          box-shadow: inset 0 0 1.5625vw #ffffff;
-}
-.callback-form button.focus-visible:active.focus-visible:active {
-  -webkit-box-shadow: inset 0 0 0.5208333333vw #f3f6f6;
-          box-shadow: inset 0 0 0.5208333333vw #f3f6f6;
 }
 
 .instagram {

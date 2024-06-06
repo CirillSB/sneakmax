@@ -1,31 +1,110 @@
 .button {
-  font-family: $ff-intro;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
   border: none;
   cursor: pointer;
 
-  @include hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        // box-shadow: 0 0 sz(10px) $color-carnation;
-        background-color: $color-mojo;
+  &--main {
+    font-family: $ff-intro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    padding: 22px 48px;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--primary {
+    color: $color-default-white;
+    background-color: $color-carnation;
+
+    @include hover {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-mojo;
+        }
+      }
+    }
+
+    @include focus {
+      &.focus-visible:focus {
+        border: none;
+        outline: none;
+        box-shadow: inset 0 0 sz(30px) $color-default-white;
+      }
+    }
+
+    @include active {
+      &.focus-visible:active {
+        box-shadow: inset 0 0 sz(10px) $color-porcelain;
+      }
+    }
+
+  }
+
+  &--secondary {
+    background-color: $color-river-bed;
+    color: $color-default-white;
+
+    @include hover {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-tuna;
+        }
+      }
+    }
+
+    @include focus {
+      &.focus-visible:focus {
+        border: none;
+        background-color: $color-tuna;
+      }
+    }
+
+    @include active {
+      &.focus-visible:active {
+        background-color: $color-carnation;
+      }
+    }
+
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-tuna;
+        }
       }
     }
   }
 
-  @include focus {
-    &.focus-visible:focus {
-      border: none;
-      outline: none;
-      box-shadow: inset 0 0 sz(30px) $color-default-white;
-    }
-  }
+  &--form {
+    padding: 24px 40px 22px;
+    border-radius: sz(4px);
+    outline: 1px solid $color-river-bed;
+    color: $color-river-bed;
+    background-color: transparent;
+    font-weight: 600;
 
-  @include active {
-    &.focus-visible:active {
-      box-shadow: inset 0 0 sz(10px) $color-porcelain;
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          background-color: $color-tuna;
+          color: $color-default-white;
+        }
+      }
+    }
+
+    @include focus {
+      &.focus-visible:focus {
+        background-color: $color-river-bed;
+        color: $color-default-white;
+      }
+    }
+
+    @include active {
+      &.focus-visible:active {
+        background-color: $color-carnation;
+      }
     }
   }
 }

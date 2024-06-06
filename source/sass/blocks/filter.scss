@@ -174,23 +174,6 @@
 
   &--submit {
     width: 100%;
-    padding: 21px 0 22px;
-    background-color: $color-river-bed;
-    color: $color-default-white;
-    border-radius: sz(4px);
-
-    @include hover-focus {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          background-color: $color-tuna;
-        }
-      }
-
-      &.focus-visible:focus {
-        background-color: $color-tuna;
-        border: 2px solid $color-tuna;
-      }
-    }
   }
 
   &--reset {

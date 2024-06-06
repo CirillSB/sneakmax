@@ -52,18 +52,16 @@
                 Контакты
               </a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">
-                  Корзина
-              </a>
-            </li>
           </ul>
-          <div class="cart">
+          <button class="cart" type="button">
+            <span class="visually-hidden">
+              Открыть корзину
+            </span>
             <svg class="cart__field" width="20" height="19">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
             <span class="cart__contents visually-hidden"></span>
-          </div>
+          </button>
         </nav>
       </div>
     </header>
@@ -76,7 +74,7 @@
           <p class="promo__description">
             Мы&nbsp;продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и&nbsp;многие другие по&nbsp;низким ценам
           </p>
-          <a class="button promo__link" href="#">
+          <a class="button button--main button--primary" href="#">
             Перейти к&nbsp;покупкам
           </a>
         </div>
@@ -183,7 +181,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="filter__button filter__button--submit" type="button">
+              <button class="filter__button filter__button--submit button button--main button--secondary" type="button">
                 Применить
               </button>
               <button class="filter__button filter__button--reset" type="button">
@@ -212,7 +210,7 @@
                     </p>
                     <!-- </a> -->
                     <div class="assortment-card__buttons">
-                      <button class="assortment-card__button" type="button">
+                      <button class="assortment-card__button button button--secondary" type="button">
                         <span class="visually-hidden">
                           Кнопка показа информации о товаре
                         </span>
@@ -220,7 +218,7 @@
                           <use xlink:href="img/sprite.svg#show"></use>
                         </svg>
                       </button>
-                      <button class="assortment-card__button" type="button">
+                      <button class="assortment-card__button button button--secondary" type="button">
                         <span class="visually-hidden">
                           Кнопка добавления товара в корзину
                         </span>
@@ -401,7 +399,7 @@
                 </li> -->
               </ul>
               <div class="catalog__button-wrapper">
-                <button class="button catalog__button">
+                <button class="button button--main button--primary catalog__button">
                   Показать еще
                 </button>
               </div>
@@ -621,7 +619,7 @@
                   из 3
                 </span>
               </span>
-              <button class="selection-form__slide-button" type="button" data-slide-button>
+              <button class="button button--form" type="button" data-slide-button>
                 Следующий шаг
               </button>
             </div>
@@ -854,7 +852,7 @@
             <input type="text" placeholder="Ваше имя">
             <input type="tel" placeholder="Номер телефона" data-tel-input>
           </fieldset>
-          <button type="submit">
+          <button class="button button--wide button--main button--primary" type="submit">
             Отправить
           </button>
         </form>
