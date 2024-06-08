@@ -1,0 +1,18 @@
+.phone-input {
+  @include hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        &:placeholder = "wwwwww"
+      }
+    }
+  }
+
+  @include focus {
+    &.focus-visible:focus {
+      outline: none;
+      color: $color-carnation;
+    }
+  }
+}
+
++7 (___) ___-____

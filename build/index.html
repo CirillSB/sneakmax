@@ -23,32 +23,32 @@
           </div>
           <ul class="navigation__list" data-da="[data-mobile-menu-content], 767, last">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#catalog">
                 Каталог
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#about-us">
                 О&nbsp;нас
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#perfect-pair">
                 Подбор товара
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#team">
                 Наша команда
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#questions">
                 Доставка и&nbsp;оплата
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#contacts">
                 Контакты
               </a>
             </li>
@@ -66,7 +66,7 @@
       </div>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container">
           <h1 class="main-title">
             Кроссовки известных брендов с&nbsp;доставкой по&nbsp;России и&nbsp;СНГ
@@ -79,7 +79,7 @@
           </a>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <h2 class="title">
             Каталог
@@ -95,10 +95,10 @@
                 </legend>
                 <div class="filter__price-wrapper">
                   <label class="filter__price-label">
-                    <input class="filter__price-value filter__price-value--min" id="price-min" type="number" min="500" max="999999" data-slider-field>
+                    <input class="filter__price-value filter__price-value--min" id="price-min" type="number" min="500" max="999999" data-slider-field aria-label="Минимальная цена">
                   </label>
                   <label class="filter__price-label">
-                    <input class="filter__price-value filter__price-value--max" id="price-max" type="number" min="500" max="999999" data-slider-field>
+                    <input class="filter__price-value filter__price-value--max" id="price-max" type="number" min="500" max="999999" data-slider-field aria-label="Максимальная цена">
                   </label>
                   <div class="filter__slider-wrapper">
                     <div class="filter__price-slider" id="slider" data-range-slider></div>
@@ -407,7 +407,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container about-us__inner">
           <div class="about-us__promo">
             <h2 class="title title--white about-us__title">
@@ -432,7 +432,7 @@
           </noscript>
         </div>
       </section>
-      <section class="perfect-pair">
+      <section class="perfect-pair" id="perfect-pair">
         <div class="container perfect-pair__inner">
           <h2 class="title perfect-pair__title">
             Мы&nbsp;подберем идеальную пару для вас
@@ -626,7 +626,7 @@
           </form>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <h2 class="team__title title title--white">
             Наша команда
@@ -737,7 +737,7 @@
           </ul>
         </div>
       </section>
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="container">
           <h2 class="title questions__title">
             Часто задаваемые вопросы
@@ -745,7 +745,7 @@
           <ul class="questions__list">
             <li class="questions__item">
               <details class="questions__details">
-                <summary class="questions__summary">
+                <summary class="questions__summary button button--summary">
                   Вопрос 1
                   <span class="questions__plus">
                     <svg width="25" height="25">
@@ -760,7 +760,7 @@
             </li>
             <li class="questions__item">
               <details class="questions__details">
-                <summary class="questions__summary">
+                <summary class="questions__summary button button--summary">
                   Вопрос 2
                   <span class="questions__plus">
                     <svg width="25" height="25">
@@ -788,12 +788,16 @@
                   Главный офис
                 </h3>
                 <div class="contacts__tooltip tooltip">
-                  <button class="tooltip__button" type="button"></button>
+                  <button class="button button--tooltip" type="button">
+                    <span class="visually-hidden">
+                      Кнопка отображения всплывающего окна
+                    </span>
+                  </button>
                   <p class="tooltip__text">
                     Адрес и&nbsp;телефон для корреспонденции, инвесторов. Вопросы о&nbsp;доставке, качестве обслуживания и&nbsp;товара просьба задавать в&nbsp;отдел продаж
                   </p>
                 </div>
-                <a class="address__phone-link" href="tel:+78007898989">
+                <a class="address__phone-link button button--phone" href="tel:+78007898989">
                   +7 800 789 89 89
                 </a>
                 <address class="address__data">
@@ -804,7 +808,7 @@
                 <h3 class="title address__title">
                   отдел продаж
                 </h3>
-                <a class="address__phone-link" href="tel:+78007898989">
+                <a class="address__phone-link button button--phone" href="tel:+78007898989">
                   +7 800 789 89 89
                 </a>
                 <address class="address__data">
@@ -814,7 +818,7 @@
             </ul>
             <ul class="contacts__socials socials">
               <li class="socials__item">
-                <a class="socials__link" href="#">
+                <a class="button button--socials" href="#">
                   <span class="visually-hidden">
                     Мы в вконтакте
                   </span>
@@ -824,7 +828,7 @@
                 </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link" href="#">
+                <a class="button button--socials" href="#">
                   <span class="visually-hidden">
                     Мы в инстаграм
                   </span>
@@ -857,14 +861,16 @@
           </button>
         </form>
         <section class="instagram">
-          <h2 class="title instagram-title">
-            <span class="visually-hidden">
-              Фото в инсаграме
-            </span>
-            <svg width="157" height="56">
-              <use xlink:href="img/sprite.svg#instagram-title"></use>
-            </svg>
+          <!-- <h2 class="title instagram-title"> -->
+          <h2 class="visually-hidden">
+            Фото в инсаграме
           </h2>
+          <a class="instagram__link button button--instagram" href="#">
+            <!--              <svg width="157" height="56">
+              <use xlink:href="img/sprite.svg#instagram-title"></use>
+            </svg> -->
+          </a>
+          <!-- </h2> -->
           <ul class="instagram__list">
             <li class="instagram__item">
               <article class="instagram__photo">
@@ -953,37 +959,37 @@
     <footer class="main-footer">
       <div class="container">
         <nav class="navigation navigation--footer">
-          <a class="navigation__logo navigation__logo--footer" href="#">
+          <a class="navigation__logo navigation__logo--footer" href="#promo">
             SneakMax
           </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#catalog">
                 Каталог
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#about-us">
                 О нас
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#perfect-pair">
                 Подбор товара
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#team">
                 Наша команда
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#questions">
                 Доставка и оплата
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#contacts">
                 Контакты
               </a>
             </li>

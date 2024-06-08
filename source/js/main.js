@@ -22,9 +22,12 @@ import {
 import {
   choosePair
 } from './modules/pair-selection/pair-selection';
+// import {
+//   setMaskTel
+// } from './modules/mask-tel/set-mask-tel';
 import {
-  setMaskTel
-} from './modules/mask-tel/set-mask-tel';
+  initPhoneMask
+} from './modules/mask-tel/phone-mask';
 import {
   initDynamicAdaptive
 } from './modules/dynamic-adaptive/init-dynamic-adaptive';
@@ -34,17 +37,19 @@ window.addEventListener('DOMContentLoaded', () => {
   testWebP();
   iosVhFix();
 
-  setRangeSlider();
-  initDynamicAdaptive();
+  
+  // initDynamicAdaptive();
 
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();
     window.form = form;
     form.init();
+    setRangeSlider();
     initDetails();
     choosePair();
-    setMaskTel();
+    // setMaskTel();
+    initPhoneMask();
     initMap();
   });
 });

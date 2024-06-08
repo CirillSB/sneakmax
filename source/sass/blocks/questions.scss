@@ -30,21 +30,6 @@
   transition: all 3s ease 0s;
 }
 
-.questions__summary {
-  position: relative;
-  font-family: $ff-intro;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: $color-mine-shaft;
-  padding: 30px 0 21px;
-  transition: all 0.3s ease 0s;
-
-  &::marker {
-    content: none;
-  }
-}
-
 .questions__plus {
   position: absolute;
   top: 50%;

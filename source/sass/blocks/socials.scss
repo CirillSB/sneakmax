@@ -13,31 +13,3 @@
     margin-right: 0;
   }
 }
-
-.socials__link {
-  @include focus {
-    &.focus-visible:focus {
-      outline-color: #0e5a4c;
-      border-radius: 100%;
-    }
-  }
-
-  @include active {
-    &.focus-visible:active {
-      border: none;
-      outline: none;
-    }
-  }
-
-  svg {
-    border-radius: 50%;
-
-    @include hover {
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          box-shadow: 0 0 sz(10px) #0e5a4c;
-        }
-      }
-    }
-  }
-}

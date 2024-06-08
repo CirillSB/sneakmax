@@ -4,31 +4,6 @@
   top: 0;
 }
 
-.tooltip__button {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
-  background:
-    url("../img/svg/question.svg") 50% 50% / 50% no-repeat,
-    linear-gradient($color-default-white);
-  box-shadow: 0 0 sz(10px) $color-shadow;
-  cursor: pointer;
-
-  &:hover {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      left: 0;
-      border: 9px solid transparent;
-      border-top: 9px solid $color-default-white;
-      pointer-events: none;
-    }
-  }
-}
-
 .tooltip__text {
   display: none;
   position: absolute;
@@ -43,6 +18,7 @@
   z-index: 100;
 }
 
-.tooltip__button:hover + .tooltip__text {
+.button--tooltip:hover + .tooltip__text, 
+.button--tooltip:focus + .tooltip__text {
   display: block;
 }

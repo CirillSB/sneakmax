@@ -1,6 +1,28 @@
 export const setMaskTel = () => {
 
   const phoneInputs = document.querySelectorAll('[data-tel-input]');
+  const canvas = document.querySelector('.wrapper');
+
+  const changePlaceholder = () => {
+    for (let i = 0; i < phoneInputs.length; i++) {
+      if (event.target === phoneInputs[i]) {
+        phoneInputs[i].placeholder = '+7 (___) ___-____';
+        return;
+      }
+    }
+  }
+
+  const returnPlaceholder = () => {
+    for (let i = 0; i < phoneInputs.length; i++) {
+      if (event.target === phoneInputs[i]) {
+        phoneInputs[i].placeholder = 'Номер телефона';
+        return;
+      }
+    }
+  }
+
+  canvas.addEventListener('mouseover', changePlaceholder);
+  canvas.addEventListener('mouseout', returnPlaceholder);
 
   const getInputNumbersValue = (input) => {
     return input.value.replace(/\D/g, '');
