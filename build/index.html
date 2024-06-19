@@ -556,23 +556,23 @@
               </h3>
               <ul class="selection-form__size-list">
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size-less-36" type="checkbox">
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size-less-36" type="checkbox" name="less 36">
                   <label class="selection-form__size-label custom-checkbox" for="size-less-36">менее 36</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size36-38" type="checkbox">
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size36-38" type="checkbox" name="36 - 38">
                   <label class="selection-form__size-label custom-checkbox" for="size36-38">36-38</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size39-41" type="checkbox">
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size39-41" type="checkbox" name="39 - 41">
                   <label class="selection-form__size-label custom-checkbox" for="size39-41">39-41</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size42-44" type="checkbox">
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size42-44" type="checkbox" name="42 - 44">
                   <label class="selection-form__size-label custom-checkbox" for="size42-44">42-44</label>
                 </li>
                 <li class="selection-form__size-item">
-                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size45" type="checkbox">
+                  <input class="selection-form__size-select hidden-checkbox visually-hidden" id="size45" type="checkbox" name="45 and more">
                   <label class="selection-form__size-label custom-checkbox" for="size45">45 и больше</label>
                 </li>
               </ul>
@@ -600,8 +600,8 @@
                 <p class="selection-form__text selection-form__text--last">
                   Получите подборку подходящих для вас моделей на&nbsp;почту
                 </p>
-                <input class="selection-form__feedback" type="text" placeholder="Ваше имя">
-                <input class="selection-form__feedback" type="email" placeholder="E-mail">
+                <input class="selection-form__feedback" type="text" placeholder="Ваше имя" required>
+                <input class="selection-form__feedback" type="email" placeholder="E-mail" required>
                 <button class="button selection-form__submit" data-button-get>
                   Получить
                 </button>
@@ -845,10 +845,7 @@
         </div>
       </section>
       <div class="container callback-wrapper">
-
-
-
-        <form class="callback-form" action="#" method="POST">
+        <form class="callback-form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
           <h2 class="title title--white callback-form__title">
             Есть вопросы?
           </h2>
@@ -856,43 +853,19 @@
             Заполните форму и&nbsp;наш менеджер свяжется с&nbsp;вами
           </p>
           <fieldset>
-            <input type="text" placeholder="Ваше имя">
-            <input class="input-tel" type="tel" placeholder="Номер телефона" data-tel-input>
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input class="input-tel" type="tel" name="phone" placeholder="Номер телефона" data-tel-input>
           </fieldset>
           <button class="button button--wide button--main button--primary" type="submit">
             Отправить
           </button>
         </form>
-
-                <form class="callback-form" action="#" method="POST">
-          <h2 class="title title--white callback-form__title">
-            Есть вопросы?
-          </h2>
-          <p>
-            Заполните форму и&nbsp;наш менеджер свяжется с&nbsp;вами
-          </p>
-          <fieldset>
-            <input type="text" placeholder="Ваше имя">
-            <input class="input-tel" type="tel" placeholder="Номер телефона" data-tel-input>
-          </fieldset>
-          <button class="button button--wide button--main button--primary" type="submit">
-            Отправить
-          </button>
-        </form>
-
-
-
         <section class="instagram">
-          <!-- <h2 class="title instagram-title"> -->
           <h2 class="visually-hidden">
             Фото в инсаграме
           </h2>
           <a class="instagram__link button button--instagram" href="#">
-            <!--              <svg width="157" height="56">
-              <use xlink:href="img/sprite.svg#instagram-title"></use>
-            </svg> -->
           </a>
-          <!-- </h2> -->
           <ul class="instagram__list">
             <li class="instagram__item">
               <article class="instagram__photo">

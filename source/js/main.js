@@ -37,9 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
   testWebP();
   iosVhFix();
 
-  
-  // initDynamicAdaptive();
-
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();
@@ -48,8 +45,29 @@ window.addEventListener('DOMContentLoaded', () => {
     setRangeSlider();
     initDetails();
     choosePair();
-    // setMaskTel();
     initPhoneMask();
     initMap();
+
+    // const canvas = document.querySelector('.wrapper');
+    // const formPages = document.querySelectorAll('[data-step-list]');
+    // const slideButton = document.querySelector('[data-slide-button]');
+
+    // const turnPages = (e) => {
+    //   if (e.target.closest('[data-slide-button]')) {
+    //     for (let i = 0; i < formPages.length; i++) {
+    //       if (formPages[i].classList.contains('.js-hidden')) {
+    //         formPages[i].classList.remove('.js-hidden');
+    //         formPages[i + 1].classList.add('.js-hidden');
+    //         // console.log('obj');
+    //       }
+    //     }
+    //   }
+
+    // }
+
+
+    // canvas.addEventListener('pointerdown', turnPages);
+    // canvas.addEventListener('keydown', turnPages);
+
   });
 });

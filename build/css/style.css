@@ -1788,6 +1788,10 @@ button,
   background-color: transparent;
   font-weight: 600;
 }
+.button--form:focus {
+  background-color: #31343c;
+  color: #ffffff;
+}
 @media (hover: hover) and (hover: hover) {
   .button--form:hover:not(.focus-visible):hover:not(.focus-visible) {
     background-color: #31343c;
@@ -1801,11 +1805,8 @@ button,
   }
 }
 .button--form.focus-visible:focus.focus-visible:focus {
-  background-color: #444b58;
+  background-color: #31343c;
   color: #ffffff;
-}
-.button--form.focus-visible:active.focus-visible:active {
-  background-color: #f14f4f;
 }
 .button--summary {
   position: relative;
@@ -1819,6 +1820,10 @@ button,
 .button--summary::marker {
   content: none;
 }
+.button--summary:focus {
+  color: red;
+  outline: none;
+}
 @media (hover: hover) and (hover: hover) {
   .button--summary:hover:not(.focus-visible):hover:not(.focus-visible) {
     color: #f14f4f;
@@ -1828,10 +1833,6 @@ button,
   .button--summary.focus-visible:focus:hover:not(.focus-visible) {
     color: #f14f4f;
   }
-}
-.button--summary.focus-visible:focus.focus-visible:focus {
-  outline: none;
-  color: #f14f4f;
 }
 .button--tooltip {
   display: block;
