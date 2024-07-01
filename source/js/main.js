@@ -25,9 +25,12 @@ import {
 // import {
 //   setMaskTel
 // } from './modules/mask-tel/set-mask-tel';
+// import {
+//   initPhoneMask
+// } from './modules/mask-tel/phone-mask';
 import {
-  initPhoneMask
-} from './modules/mask-tel/phone-mask';
+  initTelMask
+} from './modules/mask-tel/tel-mask';
 import {
   initDynamicAdaptive
 } from './modules/dynamic-adaptive/init-dynamic-adaptive';
@@ -45,7 +48,8 @@ window.addEventListener('DOMContentLoaded', () => {
     setRangeSlider();
     initDetails();
     choosePair();
-    initPhoneMask();
+    // initPhoneMask();
+    initTelMask();
     initMap();
 
     // const canvas = document.querySelector('.wrapper');
